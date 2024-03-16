@@ -1,4 +1,4 @@
-Vkax Core staging tree 100.0
+Vkax Core Community Branch
 ===========================
 
 |CI|master|develop|
@@ -9,6 +9,11 @@ Website: TBA
 
 Explorer: https://x.butkoin.com/vkax
 
+Proposed Changes:
+Masternode Collateral from 10mil -> 1mil
+Developer Fee down to 0%
+
+If you agree with these changes and would like to participate by running a node - please "follow" and "star" this repository. Development is being done voluntarily so no time frame for release is given at this moment. You are invited to participate in any way which you are able.  
 
 What is Vkax?
 -------------
@@ -28,7 +33,7 @@ information or see https://opensource.org/licenses/MIT.
 Development Process
 -------------------
 
-This fork proposes to become the new `master` branch. Development is ongoing and caution is advised before proceeding to interact with this coin, for those who do not know what they are doing. 
+This fork proposes to become the new `master` branch. Development is ongoing and caution is advised before proceeding.
 
 Development
 ------------
