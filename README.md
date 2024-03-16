@@ -1,4 +1,4 @@
-Vkax Core Community Branch
+Vkax Core Community Staging Branch
 ===========================
 
 |CI|master|develop|
