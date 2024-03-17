@@ -1,4 +1,4 @@
-Vkax Core [Community Staging Branch v100.10.1]
+Vkax Core [Community Staging Branch](v100.10.1)
 ===========================
 
 |CI|master|develop|
@@ -13,7 +13,7 @@ Proposed Changes:
 Masternode Collateral from 10mil -> 1mil
 Developer Fee down to 0%
 
-If you agree with these changes and would like to participate by running a node - please "follow" and "star" this repository. Development is being done voluntarily so no time frame for release is given at this moment. You are invited to participate in any way which you are able.  
+If you agree with these changes and would like to participate by running a node, please "follow" and "star" this repository. Development is being done voluntarily, so no time frame for release is given at this moment. You are invited to participate in any way that you are able. Miners and online masternodes will be necessary to execute this hard fork successfully. 
 
 What is Vkax?
 -------------
