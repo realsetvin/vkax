@@ -1,4 +1,4 @@
-Vkax Core [Community Staging Branch](v100.10.1)
+Vkax Core [Community Staging Branch][v100.10.1]
 ===========================
 
 |CI|master|develop|
