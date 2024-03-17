@@ -1,4 +1,5 @@
 // Copyright (c) 2014-2022 The Dash Core developers
+// 2024 VKAX Community
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
