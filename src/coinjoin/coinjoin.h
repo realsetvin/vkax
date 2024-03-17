@@ -365,11 +365,11 @@ private:
 
     // static members
     static constexpr std::array<CAmount, 5> vecStandardDenominations{
-            (10 * COIN) + 10000,
-            (1 * COIN) + 1000,
-            (COIN / 10) + 100,
-            (COIN / 100) + 10,
-            (COIN / 1000) + 1,
+            (10 * COIN) + 1000000,
+            (1 * COIN) + 100000,
+            (COIN / 10) + 10000,
+            (COIN / 100) + 1000,
+            (COIN / 1000) + 100,
     };
 
     static std::map<uint256, CCoinJoinBroadcastTx> mapDSTX;
@@ -465,10 +465,10 @@ public:
         if (auto optDenom = ranges::find_if_opt(GetStandardDenominations(), [&nInputAmount](const auto& denom) {
             return nInputAmount == denom;
         })) {
-            return (float)COIN / *optDenom * 10000;
+            return (float)COIN / *optDenom * 1000000;
         }
         if (nInputAmount < COIN) {
-            return 20000;
+            return 2000000;
         }
 
         //nondenom return largest first
