@@ -64,7 +64,7 @@
 > VKAX is an experimental crypto currency, forked from DASH with a unique mining algorithim MIKE. The VKAX community can ensure the algorithim remains asic free through hard forks.
 
 ## Building from Source
-This method has been tested on Ubuntu, to build on specific distributions please see the documentation for [UNIX](https://github.com/realsetvin/vkax/blob/master/doc/build-unix.md), [WINDOWS](https://github.com/realsetvin/vkax/blob/master/doc/build-windows.md), [NETBSD](https://github.com/realsetvin/vkax/blob/master/doc/build-netbsd.md) or [OSX](https://github.com/realsetvin/vkax/blob/master/doc/build-osx.md). More build information can be found [HERE](https://github.com/realsetvin/vkax/blob/master/doc/build-generic.md)https://github.com/realsetvin/vkax/blob/master/doc/build-generic.md. 
+This method has been tested on Ubuntu, to build on specific distributions please see the documentation for [UNIX](https://github.com/realsetvin/vkax/blob/master/doc/build-unix.md), [WINDOWS](https://github.com/realsetvin/vkax/blob/master/doc/build-windows.md), [NETBSD](https://github.com/realsetvin/vkax/blob/master/doc/build-netbsd.md) or [OSX](https://github.com/realsetvin/vkax/blob/master/doc/build-osx.md). More build information can be found [HERE](https://github.com/realsetvin/vkax/blob/master/doc/build-generic.md). 
 
 ```
 sudo apt-get install curl build-essential libtool autotools-dev automake pkg-config python3 bsdmainutils bison &&
