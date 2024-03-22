@@ -62,7 +62,7 @@
 
 
 > [!NOTE]
-> VKAX is an experimental crypto currency, forked from DASH with a unique mining algorithim MIKE. The VKAX community can ensure the algorithim remains asic free through hard forks.
+> VKAX is an experimental crypto currency, forked from DASH but utilizing a CPU mining algorithim called MIKE. The VKAX community can ensure the algorithim remains asic resistant through hard forks in the future. 
 
 
 ## Building from Source
