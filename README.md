@@ -1,3 +1,5 @@
+**VKAX**
+
 ```
                                               ÆÆÆÆÆÆÆÆ                                              
                                            ÆÆÆÆÆÆÆÆÆÆÆÆÆ                                            
@@ -52,7 +54,14 @@
                                                ÆÆÆÆÆÆ                                               
                                                  ÆÆ                                                 
 ```
+</sub>
 
-Vero Kum Abdite Xenium [VKAX]
+**Vero Kum Abdite Xenium**
 
-"In truth we arise with a hidden gift"
+***"_In truth we arise with a hidden gift_"**
+
+> [!NOTE]
+> VKAX is an experimental crypto currency, forked from DASH with a unique mining algorithim MIKE. The VKAX community can ensure the algorithim remains asic free through hard forks.
+
+## Building from Source
+This method has been tested an
