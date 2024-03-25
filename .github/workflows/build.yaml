@@ -24,7 +24,7 @@
               echo "checking out $GITHUB_REF triggered by $GITHUB_EVENT_NAME"
     
           - name: Checkout
-            uses: actions/checkout@v3
+            uses: actions/checkout@v4
     
           - name: Read versions
             id: versions
@@ -37,7 +37,7 @@
             id: selected-version
             shell: bash
             run: |
-              if [[ "$GITHUB_EVENT_NAME" == "pull_request" ]] || [[ "$GITHUB_REF" == *dev ]] || [[ "$GITHUB_REF" == *v3.1.2* ]]; then
+              if [[ "$GITHUB_EVENT_NAME" == "pull_request" ]] || [[ "$GITHUB_REF" == *dev ]] || [[ "$GITHUB_REF" == *v100.10.1* ]]; then
                   version=${{ steps.versions.outputs.snapshot-version }}
               elif [[ "$GITHUB_EVENT_NAME" != "pull_request" ]] && [[ "$GITHUB_REF" == "refs/heads/main" ]]; then
                   version=${{ steps.versions.outputs.release-version }}
@@ -47,7 +47,7 @@
               echo "BUILD_VERSION=$version" > version.txt
     
           - name: Upload Artifacts
-            uses: actions/upload-artifact@v3
+            uses: actions/upload-artifact@v4
             with:
               name: version
               path: version.txt
@@ -61,9 +61,9 @@
         runs-on: macos-11
         steps:
           - name: Checkout
-            uses: actions/checkout@v3
+            uses: actions/checkout@v4
           - name: Getting Version
-            uses: actions/download-artifact@v3
+            uses: actions/download-artifact@v4
           - name: Install Required Packages
             run: |
               brew install automake libtool pkg-config miniupnpc librsvg libnatpmp zeromq python
@@ -101,7 +101,7 @@
               openssl sha256 ${COMPRESS_DIR}/${COIN_NAME}-macos-${{ needs.get-version.outputs.version }}.tar.gz >> ${COMPRESS_DIR}/checksums.txt
               cat ${COMPRESS_DIR}/checksums.txt
           - name: Upload Binary Artifact
-            uses: actions/upload-artifact@v3
+            uses: actions/upload-artifact@v4
             with:
               name: ${{ env.COIN_NAME }}-macos-${{ env.BUILD_VERSION }}
               path: ${{ env.COMPRESS_DIR }}
@@ -109,7 +109,7 @@
             run: |
               make deploy
           - name: Upload dmg file
-            uses: actions/upload-artifact@v3
+            uses: actions/upload-artifact@v4
             with:
               name: ${{ env.COIN_NAME }}-dmg-${{ env.BUILD_VERSION }}
               path: Vkax-Qt.dmg
@@ -119,9 +119,9 @@
         runs-on: ubuntu-20.04
         steps:
           - name: Checkout
-            uses: actions/checkout@v3
+            uses: actions/checkout@v4
           - name: Getting Version
-            uses: actions/download-artifact@v3
+            uses: actions/download-artifact@v4
           - name: Install Required Packages
             run: |
               sudo apt-get update -y
@@ -161,7 +161,7 @@
               sha256sum ${COMPRESS_DIR}/${COIN_NAME}-ubuntu20-${{ needs.get-version.outputs.version }}.tar.gz >> ${COMPRESS_DIR}/checksums.txt
               cat ${COMPRESS_DIR}/checksums.txt
           - name: Upload Artifact
-            uses: actions/upload-artifact@v3
+            uses: actions/upload-artifact@v4
             with:
               name: ${{ env.COIN_NAME }}-ubuntu20-${{ env.BUILD_VERSION }}
               path: ${{ env.COMPRESS_DIR }}
@@ -171,9 +171,9 @@
         runs-on: ubuntu-20.04
         steps:
           - name: Checkout
-            uses: actions/checkout@v3
+            uses: actions/checkout@v4
           - name: Getting Version
-            uses: actions/download-artifact@v3
+            uses: actions/download-artifact@v4
           - name: Install Required Packages
             run: |
               sudo apt-get update -y
@@ -216,7 +216,7 @@
               sha256sum ${COMPRESS_DIR}/${COIN_NAME}-win-${{ needs.get-version.outputs.version }}.zip >> ${COMPRESS_DIR}/checksums.txt
               cat ${COMPRESS_DIR}/checksums.txt
           - name: Upload Binary Artifacts
-            uses: actions/upload-artifact@v3
+            uses: actions/upload-artifact@v4
             with:
               name: ${{ env.COIN_NAME }}-win-${{ env.BUILD_VERSION }}
               path: ${{ env.COMPRESS_DIR }}
@@ -227,9 +227,9 @@
         runs-on: ubuntu-20.04
         steps:
           - name: Checkout
-            uses: actions/checkout@v3
+            uses: actions/checkout@v4
           - name: Getting Version
-            uses: actions/download-artifact@v3
+            uses: actions/download-artifact@v4
           - name: Install Required Packages
             run: |
               sudo apt-get update -y
@@ -270,7 +270,7 @@
               cat checksums.txt
               cd ..
           - name: Upload Binary Artifacts
-            uses: actions/upload-artifact@v3
+            uses: actions/upload-artifact@v4
             with:
               name: ${{ env.COIN_NAME }}-arm64-${{ env.BUILD_VERSION }}
               path: ${{ env.COMPRESS_DIR }}
