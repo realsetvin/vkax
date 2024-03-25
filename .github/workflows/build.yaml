@@ -5,7 +5,7 @@
         branches:
           - main
           - v100.10.1*
-          - developelop
+          - develop
       pull_request:
         branches:
           - develop
