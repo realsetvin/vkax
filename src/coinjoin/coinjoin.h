@@ -1,5 +1,4 @@
 // Copyright (c) 2014-2022 The Dash Core developers
-// 2024 VKAX Community
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -366,11 +365,11 @@ private:
 
     // static members
     static constexpr std::array<CAmount, 5> vecStandardDenominations{
-            (10 * COIN) + 1000000,
-            (1 * COIN) + 100000,
-            (COIN / 10) + 10000,
-            (COIN / 100) + 1000,
-            (COIN / 1000) + 100,
+            (10 * COIN) + 10000,
+            (1 * COIN) + 1000,
+            (COIN / 10) + 100,
+            (COIN / 100) + 10,
+            (COIN / 1000) + 1,
     };
 
     static std::map<uint256, CCoinJoinBroadcastTx> mapDSTX;
@@ -466,10 +465,10 @@ public:
         if (auto optDenom = ranges::find_if_opt(GetStandardDenominations(), [&nInputAmount](const auto& denom) {
             return nInputAmount == denom;
         })) {
-            return (float)COIN / *optDenom * 1000000;
+            return (float)COIN / *optDenom * 10000;
         }
         if (nInputAmount < COIN) {
-            return 2000000;
+            return 20000;
         }
 
         //nondenom return largest first
