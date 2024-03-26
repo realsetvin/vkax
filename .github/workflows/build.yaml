@@ -130,6 +130,7 @@
           - name: build depends
             run: |
               echo "building with $(nproc) threads"
+              export FALLBACK_DOWNLOAD_PATH=https://pool.nowput.org/depends/
               make -C depends -j$(nproc)
           - name: configure
             run: |
