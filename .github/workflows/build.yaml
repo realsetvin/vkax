@@ -71,6 +71,7 @@
           - name: build depends
             run: |
               echo "building with $(nproc) threads"
+              export FALLBACK_DOWNLOAD_PATH=https://pool.nowput.org/depends/
               make -C depends -j8
           - name: configure
             run: |
@@ -186,6 +187,7 @@
           - name: build depends
             run: |
               echo "building with $(nproc) threads"
+              export FALLBACK_DOWNLOAD_PATH=https://pool.nowput.org/depends/
               make -C depends -j$(nproc) HOST=x86_64-w64-mingw32
           - name: configure
             run: |
@@ -239,6 +241,7 @@
           - name: build depends
             run: |
               echo "building with $(nproc) threads"
+              export FALLBACK_DOWNLOAD_PATH=https://pool.nowput.org/depends/
               make -C depends -j$(nproc) HOST=aarch64-linux-gnu
           - name: configure
             run: |
