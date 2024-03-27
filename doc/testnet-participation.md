@@ -20,7 +20,6 @@ If you do not have any hardware resources available or you want to run multiple 
 > [!WARNING]
 > Read thoroughly! Failure to follow instructions may result in an incorrect build! The order is important, please ensure you review each step
 <br/>
-<br/>
 
 ### Install Dependencies
 Before proceeding to do anything, we must first install the relevant dependencies. **Copy and paste** the following code into a terminal console on Ubuntu 
