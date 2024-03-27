@@ -1,37 +1,37 @@
-# VKAX-cli
+# vkax-cli
 
-The `VKAX-cli` application provides a command-line option for accessing VKAX Core RPCs.
+The `vkax-cli` application provides a command-line option for accessing VKAX Core RPCs.
 
 ## Usage
 
 > 🚧 Multiple wallet support
 >
 > Since you may have multiple wallets loaded at the same time, wallet-related RPCs require using the `-rpcwallet` option any time more than one wallet file is loaded. This is to ensure the RPC command is executed using the correct wallet. The syntax is:  
-> `VKAX-cli -rpcwallet=<wallet-name> <command>`
+> `vkax-cli -rpcwallet=<wallet-name> <command>`
 
 ```bash Send command
-VKAX-cli [options] <command> [params]
+vkax-cli [options] <command> [params]
 ```
 
 ```bash Send command using wallet
-VKAX-cli [options] -rpcwallet=<wallet-name> <command> [params]
+vkax-cli [options] -rpcwallet=<wallet-name> <command> [params]
 ```
 
 ```bash Send command (with named arguments)
-  VKAX-cli [options] -named <command> [name=value] ... 
+  vkax-cli [options] -named <command> [name=value] ... 
 ```
 
 ```bash List commands
-VKAX-cli [options] help
+vkax-cli [options] help
 ```
 
 ```bash Get help for command
-VKAX-cli [options] help <command>
+vkax-cli [options] help <command>
 ```
 
 > 📘 RPC Details
 >
-> View [the list of RPCs](../api/remote-procedure-call-quick-reference.md) for more detailed information. Using VKAX-cli, this information is available using the `VKAX-cli [options] help` and `VKAX-cli [options] help <command>` commands.
+> View [the list of RPCs](../api/remote-procedure-call-quick-reference.md) for more detailed information. Using vkax-cli, this information is available using the `vkax-cli [options] help` and `vkax-cli [options] help <command>` commands.
 
 ### Options
 
@@ -51,7 +51,7 @@ VKAX-cli [options] help <command>
        RPC generatetoaddress. Optional positional integer arguments are
        number of blocks to generate (default: 1) and maximum iterations
        to try (default: 1000000), equivalent to RPC generatetoaddress
-       nblocks and maxtries arguments. Example: VKAX-cli -generate 4
+       nblocks and maxtries arguments. Example: vkax-cli -generate 4
        1000
 
   -getinfo
