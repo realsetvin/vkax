@@ -4,10 +4,8 @@
 **Vero Kum Abdite Xenium**
 <br/>
 
-*"_With truth we arise, a hidden gift_"*
+*"_With truth arises a hidden gift_"*
 <br/>
-<br/>
-
 
 > [!NOTE]
 > VKAX is an experimental crypto currency, forked from DASH (and BITCOIN) but utilizing a CPU mining algorithm called MIKE. The VKAX community can ensure the algorithm remains asic resistant through hard forks in the future. 
@@ -55,7 +53,7 @@ chmod +x conf* &&
 make &&
 cd .. &&
 ./autogen.sh &&
-./configure --disable-tests –disable-bench --without-gui --prefix=$PWD/depends/x86_64-pc-linux-gnu/ &&
+./configure --disable-tests --disable-bench --without-gui --prefix=$PWD/depends/x86_64-pc-linux-gnu/ &&
 make
 ```
 
