@@ -9,7 +9,7 @@ Open-source client libraries for the RPC interface are readily available in most
 > 📘 vkax Core Configuration
 >
 > The following subsections reference setting configuration values. See the [Examples Page](../examples/introduction.md) for more information about setting vkax Core configuration values.
-
+vkax
 ### Enabling RPC
 
 If you start vkax Core using `vkax-qt`, the RPC interface is disabled by default. To enable it, set `server=1` in `vkax.conf` or supply the `-server` argument when invoking the program. If you start vkax Core using `vkaxd`, the RPC interface is enabled by default.
