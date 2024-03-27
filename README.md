@@ -35,6 +35,13 @@
 Generic build information can be found [HERE](https://github.com/realsetvin/vkax/blob/master/doc/build-generic.md).*)
 <br/>
 <br/>
+### Install Dependencies
+We must install the relevant dependencies. **Copy and paste** the following code into a terminal console on Ubuntu (**CTRL + C** to copy and **CTRL + V** to paste) 
+```
+sudo apt-get install curl build-essential libtool autotools-dev automake pkg-config python3 bsdmainutils bison nohang
+
+```
+<br/>
 
 ### Creating VKAX User
 Run the below commands in a terminal console one at a time. We will need to create a new **User** to run the daemon. (You can give it any password or press **enter** to skip.)
@@ -44,20 +51,10 @@ sudo adduser vkax
 ```
 sudo su vkax
 ```
-
-
-### Install Dependencies
-We must install the relevant dependencies. **Copy and paste** the following code into a terminal console on Ubuntu (**CTRL + C** to copy and **CTRL + V** to paste) 
-
 <br/>
 
-```
-sudo apt-get install curl build-essential libtool autotools-dev automake pkg-config python3 bsdmainutils bison nohang
-
-```
-
 ### Make the Daemon (Node)
-After installing the prerequisites, we can **build the daemon from source**
+After installing the prerequisites and creating a vkax user, we can **build the daemon from source**
 ```
 sudo apt update && sudo apt upgrade &&
 git clone https://github.com/realsetvin/vkax &&
@@ -77,7 +74,9 @@ mkdkir /.vkax/
 mv ~/vkax/src/vkax-cli ~/vkax/src/vkaxd /.vkax/
 rm -r ~/vkax/
 ```
-**Exit** the vkax user until you are back to where you where before.
+<br/>
+
+**Exit** as the vkax user
 ```
 exit
 ```
