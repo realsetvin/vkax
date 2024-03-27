@@ -77,6 +77,7 @@ rm -r ~/vkax/
 exit
 ```
 <br/>
+
 > [!CAUTION]
 > If you forget to log out of the vkax-test user, the below commands will not work properly!
 
