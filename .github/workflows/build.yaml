@@ -112,7 +112,7 @@
           - name: Upload dmg file
             uses: actions/upload-artifact@v4
             with:
-              name: ${{ env.COIN_NAME }}-dmg-${{ env.BUILD_VERSION }}
+              name: ${{ env.COIN_NAME }}-macos11-dmg-${{ env.BUILD_VERSION }}
               path: Vkax-Qt.dmg
               
       build-macos12:
@@ -127,7 +127,7 @@
           - name: Install Required Packages
             run: |
               brew install automake libtool pkg-config miniupnpc librsvg libnatpmp zeromq python
-              pip3 install ds_store mac_alias setuptools
+              pip3 install ds_store mac_alias setuptools berkeley-db4
           - name: build depends
             run: |
               echo "building with $(nproc) threads"
@@ -172,7 +172,7 @@
           - name: Upload dmg file
             uses: actions/upload-artifact@v4
             with:
-              name: ${{ env.COIN_NAME }}-dmg-${{ env.BUILD_VERSION }}
+              name: ${{ env.COIN_NAME }}-macos12-dmg-${{ env.BUILD_VERSION }}
               path: Vkax-Qt.dmg
               
       build-ubuntu20:
@@ -392,7 +392,7 @@
           - name: Upload Binary Artifacts
             uses: actions/upload-artifact@v4
             with:
-              name: ${{ env.COIN_NAME }}-arm64-${{ env.BUILD_VERSION }}
+              name: ${{ env.COIN_NAME }}-ubuntu20-arm64-${{ env.BUILD_VERSION }}
               path: ${{ env.COMPRESS_DIR }}
 
       build-ubuntu22-arm-64:
@@ -447,5 +447,5 @@
           - name: Upload Binary Artifacts
             uses: actions/upload-artifact@v4
             with:
-              name: ${{ env.COIN_NAME }}-arm64-${{ env.BUILD_VERSION }}
+              name: ${{ env.COIN_NAME }}-ubuntu22-arm64-${{ env.BUILD_VERSION }}
               path: ${{ env.COMPRESS_DIR }}
