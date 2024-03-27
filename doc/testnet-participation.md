@@ -15,9 +15,11 @@ Some local examples include, a rasberry pi, old hardware like a laptop or an unu
 
 If you do not have any hardware resources available or you want to run multiple nodes, there is a [**list of services which offer free trials or an always free option**](https://linktr.ee/setvin)
 <br/>
+<br/>
 
 > [!WARNING]
 > Please Read! Failure to follow instructions may result in an incorrect build! The order of commands is important, please ensure you review each step
+<br/>
 <br/>
 
 ### Install Dependencies
