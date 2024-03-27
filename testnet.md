@@ -19,11 +19,11 @@ sudo apt-get install curl build-essential libtool autotools-dev automake pkg-con
 ### Create VKAX User
 Run the below commands in a terminal console one at a time. We will need to create a new **User** to run the daemon. (You can give it any password or press **enter** to skip.)
 ```
-sudo adduser vkax
+sudo adduser vkax-test
 ```
 **Login** as the VKAX user
 ```
-sudo su vkax
+sudo su vkax-test
 ```
 <br/>
 
@@ -70,9 +70,9 @@ sudo su
 
 **Create** and **Enable** the systemd service
 ```
-sudo touch /etc/systemd/system/vkax.service
-sudo echo -e "[Unit]\nDescription=vkax daemon control service\n\n[Service]\nType=forking\nRestart=on-failure\nRestartSec=50s\nExecStartPre=/bin/sleep 5\nWorkingDirectory=/home/vkax/.vkaxcore/\nExecStart=/home/vkax/.vkaxcore/vkaxd\nRemainAfterExit=yes\n\n[Install]\nWantedBy=multi-user.target" >> /etc/systemd/system/vkax.service
-sudo systemctl enable vkax
+sudo touch /etc/systemd/system/vkax-test.service
+sudo echo -e "[Unit]\nDescription=vkax test daemon control service\n\n[Service]\nType=forking\nRestart=on-failure\nRestartSec=50s\nExecStartPre=/bin/sleep 5\nWorkingDirectory=/home/vkax-test/.vkaxcore/\nExecStart=/home/vkax-test/.vkaxcore/vkaxd\nRemainAfterExit=yes\n\n[Install]\nWantedBy=multi-user.target" >> /etc/systemd/system/vkax-test.service
+sudo systemctl enable vkax-test
 ```
 <br/>
 
@@ -84,5 +84,5 @@ sudo reboot
 
 We can **Watch** the **Status** of our daemon at any time with the following command
 ```
-watch systemctl status vkax
+watch systemctl status vkax-test
 ```
