@@ -46,7 +46,7 @@ sudo apt-get install curl build-essential libtool autotools-dev automake pkg-con
 
 ```
 
-### Make Daemon (Node)
+### Make the Daemon (Node)
 After installing the prerequisites, we can **build the daemon from source**
 ```
 sudo apt update && sudo apt upgrade &&
