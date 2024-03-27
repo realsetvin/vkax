@@ -1,6 +1,5 @@
 ## Participating in the VKAX Test Net
-To participate in the VKAX Test Net you will need to get a [Ubuntu](https://ubuntu.com/) system operational - either locally or with a cloud service.  
-Ubuntu is an open source operating system which is easy to use, but still powerful and stable. 
+
 <br/>
 <br/>
 
@@ -9,7 +8,8 @@ Ubuntu is an open source operating system which is easy to use, but still powerf
 <br/>
 
 ### Getting Ubuntu 
-Ubuntu is very powerful and lightweight, meaning you can run an entire operating system with only 1 cpu core and less than 1 gig of ram.
+To participate in the VKAX Test Net you will need to get a [Ubuntu](https://ubuntu.com/) system operational - either locally or with a cloud service. Ubuntu is an open source operating system which is easy to use, but still powerful and stable. 
+Meaning you can run an entire operating system with only 1 cpu core and less than 1 gig of ram.
 
 Some local examples include, a rasberry pi, old hardware like a laptop or an unused pc - or even from within your main PC using [virtualbox](https://duckduckgo.com/?q=how+to+install+ubuntu+on+virtual+box) or [vmware workstation](https://duckduckgo.com/?q=how+to+install+ubuntu+on+vmware+workstation). 
 
