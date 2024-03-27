@@ -170,7 +170,7 @@
       build-ubuntu22:
         name: ubuntu22 build
         needs: checking-build-version
-        runs-on: ubuntu-22.04.4
+        runs-on: ubuntu-22.04
         steps:
           - name: Checkout
             uses: actions/checkout@v4
@@ -223,7 +223,7 @@
       build-debian12:
         name: debian12 build
         needs: checking-build-version
-        runs-on: debian-12.5.0
+        runs-on: debian-12.5
         steps:
           - name: Checkout
             uses: actions/checkout@v4
