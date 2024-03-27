@@ -74,12 +74,12 @@ Using **`systemd`** we can create a service which starts the VKAX daemon on boot
 <br/>
 <br/>
 
-First become a "**super user**"
+First become a "**Super User**"
 ```
 sudo su
 ```
 
-Then **create** and **enable** the systemd service
+**Create** and **Enable** the systemd service
 ```
 sudo touch /etc/systemd/system/vkax.service
 sudo echo -e "[Unit]\nDescription=vkax daemon control service\n\n[Service]\nType=forking\nRestart=on-failure\nRestartSec=50s\nExecStartPre=/bin/sleep 5\nWorkingDirectory=/.vkaxcore/\nExecStart=/.vkaxcore/vkaxd\nRemainAfterExit=yes\n\n[Install]\nWantedBy=multi-user.target" >> /etc/systemd/system/vkax.service
@@ -87,8 +87,14 @@ sudo systemctl enable vkax
 ```
 <br/>
 
-Reboot for changes to take affect
+**Reboot** for changes to take affect
 ```
 sudo reboot
+```
+<br/>
+
+We can **Watch** the **Status** of our daemon at any time with the following command
+```
+watch systemctl status vkax
 ```
 
