@@ -50,11 +50,11 @@ chmod +x conf* &&
 make &&
 cd .. &&
 ./autogen.sh &&
-./configure --disable-tests –disable-bench --without-gui --prefix=$PWD/depends/x86_64-pc-linux-gnu/ &&
+./configure --disable-tests --disable-bench --without-gui --prefix=$PWD/depends/x86_64-pc-linux-gnu/ &&
 make
 ```
 > [!NOTE]  
-> The build will take a long time. Please do not close the system while the build is working!
+> The build will take a long time. Please do not close the system while the build is working
 
 <br/>
 
@@ -73,7 +73,7 @@ rm -r ~/vkax/
 exit
 ```
 > [!CAUTION]
-> If you forget to log out of the vkax-test user, the below commands will not work properly!
+> If you forget to log out of the vkax-test user, the below commands will not work properly
 
 <br/>
 <br/>
