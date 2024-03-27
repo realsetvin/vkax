@@ -1,4 +1,4 @@
-
+ ---
     name: Vkax Build
     on:
       push:
@@ -167,7 +167,7 @@
             with:
               name: ${{ env.COIN_NAME }}-ubuntu20-${{ env.BUILD_VERSION }}
               path: ${{ env.COMPRESS_DIR }}
-    build-ubuntu22:
+      build-ubuntu22:
         name: ubuntu22 build
         needs: checking-build-version
         runs-on: ubuntu-22.04.4
@@ -220,7 +220,7 @@
             with:
               name: ${{ env.COIN_NAME }}-ubuntu22-${{ env.BUILD_VERSION }}
               path: ${{ env.COMPRESS_DIR }}
-    build-debian12:
+      build-debian12:
         name: debian12 build
         needs: checking-build-version
         runs-on: debian-12.5.0
