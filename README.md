@@ -61,7 +61,7 @@ make
 ```
 <br/>
 
-Then run the following command to clean up the build files
+**Clean** up the build files
 ```
 mkdkir /.vkax/
 mv ~/vkax/src/vkax-cli ~/vkax/src/vkaxd /.vkax/
