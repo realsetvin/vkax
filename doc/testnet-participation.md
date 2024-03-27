@@ -18,7 +18,7 @@ If you do not have any hardware resources available or you want to run multiple 
 <br/>
 
 > [!WARNING]
-> Please read! Failure to follow instructions may result in an incorrect build! The order is important, please ensure you review each step
+> Read thoroughly! Failure to follow instructions may result in an incorrect build! The order is important, please ensure you review each step
 <br/>
 <br/>
 
