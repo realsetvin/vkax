@@ -1,9 +1,8 @@
 ## Participating in the VKAX Test Net
-
+VKAX is a decentralized project with ambitions to become fully community owned. To contribute you must learn how VKAX works. Follow this easy and simple guide to get started with VKAX test net development!
 <br/>
-<br/>
 
-> [!NOTE]
+> [!TIP]
 > Learning how to use the VKAX Test Net will prepare you to do things like mine solo or run a masternode on the Main Net
 <br/>
 
@@ -56,6 +55,11 @@ cd .. &&
 make
 ```
 <br/>
+> [!NOTE]  
+> The build will take a long time. Please do not close the system while the build is working!
+
+
+<br/>
 
 **Clean** up the build files
 ```
@@ -69,6 +73,9 @@ rm -r ~/vkax/
 ```
 exit
 ```
+<br/>
+
+
 <br/>
 <br/>
 
