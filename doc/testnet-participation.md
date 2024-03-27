@@ -60,14 +60,6 @@ make
 
 <br/>
 
-**Clean** up the build files
-```
-mkdir /.vkax/
-mv ~/vkax/src/vkax-cli ~/vkax/src/vkaxd /.vkax/
-rm -R ~/vkax/
-```
-<br/>
-
 **Exit** as the vkax-test user
 ```
 exit
@@ -76,6 +68,15 @@ exit
 > If you forget to log out of the vkax-test user, the below commands will not work properly
 
 <br/>
+
+**Clean** up the build files
+```
+sudo mkdir /home/vkax-test/.vkaxcore/
+sudo mv /home/vkax-test/vkax/src/vkax-cli /home/vkax-test/vkax/src/vkaxd /home/vkax-test/.vkaxcore/
+sudo rm -R /home/vkax-test/vkax/
+```
+<br/>
+
 <br/>
 
 ### Starting the Daemon
