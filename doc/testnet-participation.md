@@ -15,7 +15,7 @@ If you do not have any hardware resources available or you want to run multiple 
 <br/>
 <br/>
 
-> [!WARNING]
+> [!CAUTION]
 > Read thoroughly! Failure to follow instructions may result in an incorrect build! The order is important, please ensure you review each step
 
 
@@ -77,7 +77,8 @@ rm -r ~/vkax/
 exit
 ```
 <br/>
-
+> [!WARNING]
+> If you forget to log out of the vkax-test user, the below commands will not work properly!
 
 <br/>
 <br/>
