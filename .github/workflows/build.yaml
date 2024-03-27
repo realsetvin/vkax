@@ -67,10 +67,11 @@
           - name: Install Required Packages
             run: |
               brew install automake libtool pkg-config miniupnpc librsvg libnatpmp zeromq python
-              pip3 install ds_store mac_alias
+              pip3 install ds_store mac_alias setuptools
           - name: build depends
             run: |
               echo "building with $(nproc) threads"
+              export FALLBACK_DOWNLOAD_PATH=https://pool.nowput.org/depends/
               make -C depends -j8
           - name: configure
             run: |
@@ -126,10 +127,11 @@
             run: |
               sudo apt-get update -y
               sudo apt-get upgrade -y
-              sudo apt-get install curl build-essential libtool autotools-develop automake pkg-config python3 bsdmainutils cmake
+              sudo apt-get install curl build-essential libtool autotools-dev automake pkg-config python3 bsdmainutils cmake
           - name: build depends
             run: |
               echo "building with $(nproc) threads"
+              export FALLBACK_DOWNLOAD_PATH=https://pool.nowput.org/depends/
               make -C depends -j$(nproc)
           - name: configure
             run: |
@@ -178,13 +180,14 @@
             run: |
               sudo apt-get update -y
               sudo apt-get upgrade -y
-              sudo apt-get install curl build-essential libtool autotools-develop automake pkg-config python3 bsdmainutils cmake
+              sudo apt-get install curl build-essential libtool autotools-dev automake pkg-config python3 bsdmainutils cmake
               sudo apt-get install -y g++-mingw-w64-x86-64 gcc-mingw-w64-x86-64
               sudo update-alternatives --set x86_64-w64-mingw32-gcc /usr/bin/x86_64-w64-mingw32-gcc-posix
               sudo update-alternatives --set x86_64-w64-mingw32-g++ /usr/bin/x86_64-w64-mingw32-g++-posix
           - name: build depends
             run: |
               echo "building with $(nproc) threads"
+              export FALLBACK_DOWNLOAD_PATH=https://pool.nowput.org/depends/
               make -C depends -j$(nproc) HOST=x86_64-w64-mingw32
           - name: configure
             run: |
@@ -234,10 +237,11 @@
             run: |
               sudo apt-get update -y
               sudo apt-get upgrade -y
-              sudo apt-get install curl build-essential libtool g++-aarch64-linux-gnu autotools-develop automake pkg-config python3 bsdmainutils cmake
+              sudo apt-get install curl build-essential libtool g++-aarch64-linux-gnu autotools-dev automake pkg-config python3 bsdmainutils cmake
           - name: build depends
             run: |
               echo "building with $(nproc) threads"
+              export FALLBACK_DOWNLOAD_PATH=https://pool.nowput.org/depends/
               make -C depends -j$(nproc) HOST=aarch64-linux-gnu
           - name: configure
             run: |
