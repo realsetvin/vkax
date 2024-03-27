@@ -334,7 +334,7 @@
               name: ${{ env.COIN_NAME }}-win-${{ env.BUILD_VERSION }}
               path: ${{ env.COMPRESS_DIR }}
   
-      build-arm-64:
+      build-ubuntu20-arm-64:
         name: arm 64 bit build
         needs: checking-build-version
         runs-on: ubuntu-20.04
@@ -389,7 +389,7 @@
               name: ${{ env.COIN_NAME }}-arm64-${{ env.BUILD_VERSION }}
               path: ${{ env.COMPRESS_DIR }}
 
-      build-arm-64:
+      build-ubuntu22-arm-64:
         name: arm 64 bit build
         needs: checking-build-version
         runs-on: ubuntu-22.04
