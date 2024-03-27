@@ -10,14 +10,16 @@
 <br/>
 
 ### Install Dependencies
-We must first install the relevant dependencies. **Copy and paste** the following code into a terminal console on Ubuntu (Press the button on the right of the code block, or press **CTRL + C** to copy and then **CTRL + V** to paste) 
+We must first install the relevant dependencies. **Copy and paste** the following code into a terminal console on Ubuntu 
+(Press the button on the right of the code block, or press **CTRL + C** to copy and then **CTRL + V** to paste) 
 ```
 sudo apt-get install curl build-essential libtool autotools-dev automake pkg-config python3 bsdmainutils bison nohang
 ```
 <br/>
 
 ### Create VKAX User
-Run the below commands in a terminal console one at a time. We will need to create a new **User** to run the daemon. (You can give it any password or press **enter** to skip.)
+Run the below commands in a terminal console one at a time. We will need to create a new **User** to run the daemon. 
+(You can give it any password or press **enter** to skip.)
 ```
 sudo adduser vkax-test
 ```
