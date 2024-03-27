@@ -104,7 +104,7 @@
           - name: Upload Binary Artifact
             uses: actions/upload-artifact@v4
             with:
-              name: ${{ env.COIN_NAME }}-macos-${{ env.BUILD_VERSION }}
+              name: ${{ env.COIN_NAME }}-macos11-${{ env.BUILD_VERSION }}
               path: ${{ env.COMPRESS_DIR }}
           - name: Generate Macos dmg files
             run: |
@@ -164,7 +164,7 @@
           - name: Upload Binary Artifact
             uses: actions/upload-artifact@v4
             with:
-              name: ${{ env.COIN_NAME }}-macos-${{ env.BUILD_VERSION }}
+              name: ${{ env.COIN_NAME }}-macos12-${{ env.BUILD_VERSION }}
               path: ${{ env.COMPRESS_DIR }}
           - name: Generate Macos dmg files
             run: |
