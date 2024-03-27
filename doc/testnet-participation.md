@@ -5,6 +5,8 @@ VKAX is a decentralized project with ambitions to become fully community owned. 
 > [!TIP]
 > Learning how to use the VKAX **Test Net** will prepare you to do things like mine solo or run a masternode on the **Main Net**
 
+
+<br/>
 ### Getting Ubuntu 
 To participate in the VKAX Test Net you will need to get a [Ubuntu](https://ubuntu.com/) system operational - either locally or with a cloud service. Ubuntu is an open source operating system which is easy to use, but still powerful and stable. 
 Meaning you can run an entire operating system with as little as 1 cpu core and less than 1 gig of ram.
@@ -17,6 +19,8 @@ If you do not have any hardware resources available or you want to run multiple 
 > [!WARNING]
 > Read thoroughly! Failure to follow instructions may result in an incorrect build! The order is important, please ensure you review each step
 
+
+<br/>
 ### Install Dependencies
 Before proceeding to do anything, we must first install the relevant dependencies. **Copy and paste** the following code into a terminal console on Ubuntu 
 (Press the **button on the right** of the code block, or press **CTRL + C** to copy and then **CTRL + V** to paste) 
@@ -58,6 +62,7 @@ make
 
 <br/>
 
+<br/>
 **Clean** up the build files
 ```
 mkdkir /.vkax/
