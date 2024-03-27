@@ -13,7 +13,8 @@
 Before proceeding to do anything, we must first install the relevant dependencies. **Copy and paste** the following code into a terminal console on Ubuntu 
 (Press the **button on the right** of the code block, or press **CTRL + C** to copy and then **CTRL + V** to paste) 
 ```
-sudo apt-get install curl build-essential libtool autotools-dev automake pkg-config python3 bsdmainutils bison nohang
+sudo apt-get install curl build-essential libtool autotools-dev automake pkg-config python3 bsdmainutils bison nohang &&
+sudo apt update -y && sudo apt upgrade -y
 ```
 <br/>
 
@@ -32,7 +33,6 @@ sudo su vkax-test
 ### Make the Daemon (Node)
 After installing the prerequisites and becoming the vkax-test user, we can **build the daemon from source**
 ```
-sudo apt update && sudo apt upgrade &&
 git clone https://github.com/realsetvin/vkax &&
 cd vkax/depends/ &&
 chmod +x conf* &&
