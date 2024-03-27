@@ -58,7 +58,8 @@ cd .. &&
 ./autogen.sh &&
 ./configure --disable-tests –disable-bench --without-gui --prefix=$PWD/depends/x86_64-pc-linux-gnu/ &&
 make
-r<br/>
+```
+<br/>
 
 Then run the following command to clean up the build files
 ```
