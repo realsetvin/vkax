@@ -62,7 +62,7 @@ make
 
 **Clean** up the build files
 ```
-mkdkir /.vkax/
+mkdir /.vkax/
 mv ~/vkax/src/vkax-cli ~/vkax/src/vkaxd /.vkax/
 rm -r ~/vkax/
 ```
