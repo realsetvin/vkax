@@ -1,10 +1,5 @@
 ## Participating in VKAX Test Net
-(*This method has been tested on Ubuntu, to build on other systems please see the documentation
-[UNIX](https://github.com/realsetvin/vkax/blob/master/doc/build-unix.md), 
-[WINDOWS](https://github.com/realsetvin/vkax/blob/master/doc/build-windows.md), 
-[NETBSD](https://github.com/realsetvin/vkax/blob/master/doc/build-netbsd.md) or 
-[OSX](https://github.com/realsetvin/vkax/blob/master/doc/build-osx.md). 
-Generic build information can be found [HERE](https://github.com/realsetvin/vkax/blob/master/doc/build-generic.md).*)
+
 <br/>
 
 > [!WARNING]
