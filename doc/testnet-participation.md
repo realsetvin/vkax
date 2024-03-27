@@ -78,7 +78,6 @@ exit
 <br/>
 <br/>
 
-
 ### Starting the Daemon
 Using **`systemd`** we can create a service which starts the VKAX daemon on boot, and restarts it after a crash
 <br/>
