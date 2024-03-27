@@ -97,7 +97,7 @@ sudo systemctl enable vkax-test
 ```
 <br/>
 
-**Reboot** for changes to take affect
+**Reboot** for changes to take effect
 ```
 sudo reboot
 ```
