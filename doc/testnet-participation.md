@@ -1,6 +1,7 @@
 ## Participating in the VKAX Test Net
 VKAX is a decentralized project with ambitions to become fully community owned. To contribute you must learn how VKAX works. Follow this easy and simple guide to get started with VKAX test net development!
 <br/>
+<br/>
 
 > [!TIP]
 > Learning how to use the VKAX **Test Net** will prepare you to do things like mine solo or run a masternode on the **Main Net**
