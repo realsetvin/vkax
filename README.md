@@ -58,7 +58,6 @@ cd .. &&
 ./configure --disable-tests –disable-bench --without-gui --prefix=$PWD/depends/x86_64-pc-linux-gnu/ &&
 make
 ```
-<br/>
 
 ### Starting the Daemon
 Using **`systemd`** we can create a service which starts the VKAX daemon on boot, or restarts it after a crash
@@ -71,7 +70,7 @@ The following command will open a **blank text editor**
 sudo nano 
 ```
 
-You will **copy and paste** the following code into the blank text file. (CTRL + C to copy and CTRL + V to pase) 
+You will **copy and paste** the below text into the blank file. (**CTRL + C** to copy and **CTRL + V** to paste) 
 
 <br/>
 To save the text file press 
