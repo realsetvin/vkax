@@ -56,7 +56,6 @@ cd .. &&
 make
 ```
 <br/>
-<br/>
 
 > [!NOTE]  
 > The build will take a long time. Please do not close the system while the build is working!
