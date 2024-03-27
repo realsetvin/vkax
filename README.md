@@ -16,7 +16,7 @@
 ### Quick Links
 [VKAX CLI Arguments & Commands](https://github.com/realsetvin/vkax/blob/master/doc/vkax-cli-wallet-arguments-and-commands)
 <br/>
-[VKAX RPC Procedure & Calls](https://github.com/realsetvin/vkax/blob/master/doc/vkax-remote-procedure-calls)
+[VKAX Remote Procedure Calls (RPC)](https://github.com/realsetvin/vkax/blob/master/doc/vkax-remote-procedure-calls)
 <br/>
 
 
