@@ -24,10 +24,12 @@ Drag VKAX Core to your applications folder, and then run VKAX Core.
 
 ### Need Help?
 
-* See the [VKAX documentation](https://docs.VKAX.org)
+* See the [VKAX documentation]()
 for help and more information.
-* Ask for help on [VKAX Discord](http://stayVKAXy.com)
-* Ask for help on the [VKAX Forum](https://VKAX.org/forum)
+* Ask for help on [VKAX Discord]()
+* Ask for help on the [VKAX Forum]()
+
+  (coming soon)
 
 Building
 ---------------------
