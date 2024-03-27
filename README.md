@@ -77,7 +77,8 @@ First become a "**super user**"
 ```
 sudo su
 ```
-Then create and enable the systemd service
+
+Then **create** and **enable** the systemd service
 ```
 sudo touch /etc/systemd/system/vkax.service
 sudo echo -e "[Unit]\nDescription=vkax daemon control service\n\n[Service]\nType=forking\nRestart=on-failure\nRestartSec=50s\nExecStartPre=/bin/sleep 5\nWorkingDirectory=/.vkaxcore/\nExecStart=/.vkaxcore/vkaxd\nRemainAfterExit=yes\n\n[Install]\nWantedBy=multi-user.target" >> /etc/systemd/system/vkax.service
