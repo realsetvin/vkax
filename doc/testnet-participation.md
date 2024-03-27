@@ -1,4 +1,4 @@
-## Participating in VKAX Test Net
+## Participating in the VKAX Test Net
 Ubuntu is an open source operating system which is easy to use for end users, but still powerful and stable enough to be used as a full time server. 
 
 <br/>
