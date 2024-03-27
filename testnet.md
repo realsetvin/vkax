@@ -3,7 +3,7 @@
 <br/>
 
 > [!WARNING]
-> Failure to follow instructions correctly may result in an incorrect build or having to restart from step 1! The order of commands is important! 
+> Failure to follow instructions may result in an incorrect build! The order of commands is important, please ensure you review each step.
 <br/>
 
 ### Getting a VPS 
