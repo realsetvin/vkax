@@ -11,8 +11,8 @@ The following are some helpful notes on how to run VKAX Core on your native plat
 
 Unpack the files into a directory and run:
 
-- `bin/VKAX-qt` (GUI) or
-- `bin/VKAXd` (headless)
+- `bin/vkax-qt` (GUI) or
+- `bin/vkaxd` (headless)
 
 ### Windows
 
