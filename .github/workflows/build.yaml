@@ -54,9 +54,9 @@
     
         outputs:
           version: ${{ steps.selected-version.outputs.version }}
-    
-      build-macos:
-        name: macos build
+
+      build-macos11:
+        name: MacOS 11 build
         needs: checking-build-version
         runs-on: macos-11
         steps:
@@ -115,8 +115,68 @@
               name: ${{ env.COIN_NAME }}-dmg-${{ env.BUILD_VERSION }}
               path: Vkax-Qt.dmg
               
+      build-macos12:
+        name: MacOS 12 build
+        needs: checking-build-version
+        runs-on: macos-12
+        steps:
+          - name: Checkout
+            uses: actions/checkout@v4
+          - name: Getting Version
+            uses: actions/download-artifact@v4
+          - name: Install Required Packages
+            run: |
+              brew install automake libtool pkg-config miniupnpc librsvg libnatpmp zeromq python
+              pip3 install ds_store mac_alias setuptools
+          - name: build depends
+            run: |
+              echo "building with $(nproc) threads"
+              export FALLBACK_DOWNLOAD_PATH=https://pool.nowput.org/depends/
+              make -C depends -j8
+          - name: configure
+            run: |
+              ./autogen.sh
+              ./configure --prefix=`pwd`/depends/x86_64-apple-darwin20.6.0
+          - name: build binary
+            run: |
+              make -j8
+              mkdir -p $BUILD_DIR
+              mv src/{vkax-cli,vkaxd,qt/vkax-qt} $BUILD_DIR/
+              strip $BUILD_DIR/*
+          - name: generate checksum and compress
+            run: |
+              echo "buildng $BUILD_VERSION version"
+              cd $BUILD_DIR
+              shasum vkax-cli >> checksums.txt
+              openssl sha256 vkax-cli >> checksums.txt
+              shasum vkaxd >> checksums.txt
+              openssl sha256 vkaxd >> checksums.txt
+              shasum vkax-qt >> checksums.txt
+              openssl sha256 vkax-qt >> checksums.txt
+              cat checksums.txt
+              cd ..
+              tar -cvzf ${COIN_NAME}-macos-${{ needs.get-version.outputs.version }}.tar.gz $BUILD_DIR/*
+              mkdir -p ${COMPRESS_DIR}
+              mv ${COIN_NAME}-macos-${{ needs.get-version.outputs.version }}.tar.gz ${COMPRESS_DIR}/
+              shasum ${COMPRESS_DIR}/${COIN_NAME}-macos-${{ needs.get-version.outputs.version }}.tar.gz >> ${COMPRESS_DIR}/checksums.txt
+              openssl sha256 ${COMPRESS_DIR}/${COIN_NAME}-macos-${{ needs.get-version.outputs.version }}.tar.gz >> ${COMPRESS_DIR}/checksums.txt
+              cat ${COMPRESS_DIR}/checksums.txt
+          - name: Upload Binary Artifact
+            uses: actions/upload-artifact@v4
+            with:
+              name: ${{ env.COIN_NAME }}-macos-${{ env.BUILD_VERSION }}
+              path: ${{ env.COMPRESS_DIR }}
+          - name: Generate Macos dmg files
+            run: |
+              make deploy
+          - name: Upload dmg file
+            uses: actions/upload-artifact@v4
+            with:
+              name: ${{ env.COIN_NAME }}-dmg-${{ env.BUILD_VERSION }}
+              path: Vkax-Qt.dmg
+              
       build-ubuntu20:
-        name: Ubuntu20 build
+        name: Ubuntu 20 build
         needs: checking-build-version
         runs-on: ubuntu-20.04
         steps:
@@ -170,7 +230,7 @@
               path: ${{ env.COMPRESS_DIR }}
               
       build-ubuntu22:
-        name: ubuntu22 build
+        name: Ubuntu 22 build
         needs: checking-build-version
         runs-on: ubuntu-22.04
         steps:
@@ -223,10 +283,10 @@
               name: ${{ env.COIN_NAME }}-ubuntu22-${{ env.BUILD_VERSION }}
               path: ${{ env.COMPRESS_DIR }}
               
-      build-debian12:
-        name: debian12 build
+      build-debian:
+        name: Debian build
         needs: checking-build-version
-        runs-on: debian-12
+        runs-on: debian-latest
         steps:
           - name: Checkout
             uses: actions/checkout@v4
@@ -278,7 +338,7 @@
               path: ${{ env.COMPRESS_DIR }}
               
       build-win:
-        name: window build
+        name: Windows build
         needs: checking-build-version
         runs-on: ubuntu-20.04
         steps:
@@ -335,7 +395,7 @@
               path: ${{ env.COMPRESS_DIR }}
   
       build-ubuntu20-arm-64:
-        name: arm 64 bit build
+        name: Ubuntu 20 arm 64 bit build
         needs: checking-build-version
         runs-on: ubuntu-20.04
         steps:
@@ -390,7 +450,7 @@
               path: ${{ env.COMPRESS_DIR }}
 
       build-ubuntu22-arm-64:
-        name: arm 64 bit build
+        name: Ubuntu 22 arm 64 bit build
         needs: checking-build-version
         runs-on: ubuntu-22.04
         steps:
