@@ -54,6 +54,8 @@ rm -r ~/vkax/
 ```
 exit
 ```
+<br/>
+<br/>
 
 
 ### Starting the Daemon
