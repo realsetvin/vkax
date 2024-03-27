@@ -1,6 +1,7 @@
 ## Participating in the VKAX Test Net
 Ubuntu is an open source operating system which is easy to use for end users, but still powerful and stable enough to be used as a full time server. 
 <br/>
+<br/>
 
 > [!WARNING]
 > Failure to follow instructions may result in an incorrect build! The order of commands is important, please ensure you review each step
@@ -14,6 +15,7 @@ Ubuntu is very powerful and lightweight, meaning you can run an entire operating
 Some local examples include, a rasberry pi, old hardware like a laptop or an unused pc - or even from within your main PC using [virtualbox](https://duckduckgo.com/?q=how+to+install+ubuntu+on+virtual+box) or [vmware workstation](https://duckduckgo.com/?q=how+to+install+ubuntu+on+vmware+workstation). 
 
 If you do not have any hardware resources available or you want to run multiple nodes, there is a [**list of services which offer free trials or an always free option**](https://linktr.ee/setvin) for each individual.
+<br/>
 <br/>
 
 > [!NOTE]
