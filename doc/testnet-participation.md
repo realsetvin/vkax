@@ -1,8 +1,6 @@
 ## Participating in the VKAX Test Net
 > [!TIP]
 > Learning how to use the VKAX **Test Net** will prepare you to do things like mine solo or run a masternode on the **Main Net**
-
-
 <br/>
 
 ### Getting Ubuntu 
