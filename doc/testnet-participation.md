@@ -14,12 +14,10 @@ Meaning you can run an entire operating system with as little as 1 cpu core and 
 Some local examples include, a rasberry pi, old hardware like a laptop or an unused pc - or even from within your main PC using [virtualbox](https://duckduckgo.com/?q=how+to+install+ubuntu+on+virtual+box) or [vmware workstation](https://duckduckgo.com/?q=how+to+install+ubuntu+on+vmware+workstation)
 
 If you do not have any hardware resources available or you want to run multiple nodes, there is a [**list of services which offer free trials or an always free option**](https://linktr.ee/setvin)
-
-<br/>
 <br/>
 
 > [!WARNING]
-> Failure to follow instructions may result in an incorrect build! The order of commands is important, please ensure you review each step
+> Please Read! Failure to follow instructions may result in an incorrect build! The order of commands is important, please ensure you review each step
 <br/>
 
 ### Install Dependencies
