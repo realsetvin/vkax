@@ -55,8 +55,6 @@ cd .. &&
 ./configure --disable-tests –disable-bench --without-gui --prefix=$PWD/depends/x86_64-pc-linux-gnu/ &&
 make
 ```
-<br/>
-
 > [!NOTE]  
 > The build will take a long time. Please do not close the system while the build is working!
 
@@ -76,8 +74,6 @@ rm -r ~/vkax/
 ```
 exit
 ```
-<br/>
-
 > [!CAUTION]
 > If you forget to log out of the vkax-test user, the below commands will not work properly!
 
