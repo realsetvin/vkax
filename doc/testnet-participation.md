@@ -54,7 +54,7 @@ cd .. &&
 make -j$(nproc)
 ```
 > [!NOTE]  
-> The build will take a long time. Please do not close the system while the build is working
+> The build will take a long time. Please do not close the system while the script is working
 
 <br/>
 
