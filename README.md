@@ -1,74 +1,71 @@
 **VKAX**
-
-```
-                                              ÆÆÆÆÆÆÆÆ                                              
-                                           ÆÆÆÆÆÆÆÆÆÆÆÆÆ                                            
-                                          ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                                           
-                                         ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                                          
-                                         ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                                          
-                                         ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                                          
-                                          ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                                          
-                                         ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                                         
-                                        ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                                        
-                                       ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                                       
-                                      ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                                      
-                                     ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                                     
-                                    ÆÆÆÆÆÆÆÆÆÆÆÆÆ  ÆÆÆÆÆÆÆÆÆÆÆÆÆ                                    
-                                   ÆÆÆÆÆÆÆÆÆÆÆÆÆ    ÆÆÆÆÆÆÆÆÆÆÆÆÆ                                   
-                                  ÆÆÆÆÆÆÆÆÆÆÆÆÆ      ÆÆÆÆÆÆÆÆÆÆÆÆÆ                                  
-                                 ÆÆÆÆÆÆÆÆÆÆÆÆÆ        ÆÆÆÆÆÆÆÆÆÆÆÆÆ                                 
-                                ÆÆÆÆÆÆÆÆÆÆÆÆ           ÆÆÆÆÆÆÆÆÆÆÆÆÆ                                
-                              ÆÆÆÆÆÆÆÆÆÆÆÆÆ             ÆÆÆÆÆÆÆÆÆÆÆÆÆ                               
-                             ÆÆÆÆÆÆÆÆÆÆÆÆÆ               ÆÆÆÆÆÆÆÆÆÆÆÆÆ                              
-                            ÆÆÆÆÆÆÆÆÆÆÆ                      ÆÆÆÆÆÆÆÆÆÆÆ                            
-                           ÆÆÆÆÆÆÆÆÆ                            ÆÆÆÆÆÆÆÆÆ                           
-      ÆÆÆÆ                ÆÆÆÆÆÆÆÆ                                ÆÆÆÆÆÆÆÆ                ÆÆÆÆ      
-    ÆÆÆÆÆÆÆ              ÆÆÆÆÆÆÆÆ                                  ÆÆÆÆÆÆÆÆ             ÆÆÆÆÆÆÆÆ    
-  ÆÆÆÆÆÆÆÆÆÆÆ           ÆÆÆÆÆÆÆ                                      ÆÆÆÆÆÆÆ           ÆÆÆÆÆÆÆÆÆÆ   
- ÆÆÆÆÆÆÆÆÆÆÆÆÆÆ        ÆÆÆÆÆÆÆ                                        ÆÆÆÆÆÆÆ        ÆÆÆÆÆÆÆÆÆÆÆÆÆÆ 
- ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ     ÆÆÆÆÆÆÆ                                          ÆÆÆÆÆÆÆ     ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ 
-   ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ  ÆÆÆÆÆÆÆ                                            ÆÆÆÆÆÆÆ  ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ   
-    ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                                              ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ     
-      ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                                                ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ      
-        ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                                                  ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ        
-          ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                                                ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ          
-            ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                                            ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ            
-              ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                                        ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ              
-               ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                                    ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                
-                 ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                                ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                 
-                   ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                             ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                   
-                     ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                         ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                     
-                       ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                      ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                       
-                         ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                  ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                         
-                           ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ              ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                           
-                            ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ          ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                             
-                              ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ      ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                              
-                                ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ  ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                                
-                                  ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                                  
-                                    ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                                    
-                                      ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                                      
-                                        ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                                        
-                                         ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                                          
-                                           ÆÆÆÆÆÆÆÆÆÆÆÆÆÆ                                           
-                                             ÆÆÆÆÆÆÆÆÆÆ                                             
-                                               ÆÆÆÆÆÆ                                               
-                                                 ÆÆ                                                 
-```
-</sub>
+<br/>
 
 **Vero Kum Abdite Xenium**
+<br/>
 
 *"_In truth we arise with a hidden gift_"*
+<br/>
+<br/>
 
 
 > [!NOTE]
-> VKAX is an experimental crypto currency, forked from DASH but utilizing a CPU mining algorithim called MIKE. The VKAX community can ensure the algorithim remains asic resistant through hard forks in the future. 
+> VKAX is an experimental crypto currency, forked from DASH but utilizing a CPU mining algorithm called MIKE. The VKAX community can ensure the algorithm remains asic resistant through hard forks in the future. 
+<br/>
+
+
+## Getting Started
+<br/>
+
+
 
 
 ## Building from Source
-This method has been tested on Ubuntu, to build on specific distributions please see the documentation for [UNIX](https://github.com/realsetvin/vkax/blob/master/doc/build-unix.md), [WINDOWS](https://github.com/realsetvin/vkax/blob/master/doc/build-windows.md), [NETBSD](https://github.com/realsetvin/vkax/blob/master/doc/build-netbsd.md) or [OSX](https://github.com/realsetvin/vkax/blob/master/doc/build-osx.md). More build information can be found [HERE](https://github.com/realsetvin/vkax/blob/master/doc/build-generic.md). 
+(*This method has been tested on Ubuntu, to build on other systems please see the documentation
+[UNIX](https://github.com/realsetvin/vkax/blob/master/doc/build-unix.md), 
+[WINDOWS](https://github.com/realsetvin/vkax/blob/master/doc/build-windows.md), 
+[NETBSD](https://github.com/realsetvin/vkax/blob/master/doc/build-netbsd.md) or 
+[OSX](https://github.com/realsetvin/vkax/blob/master/doc/build-osx.md). 
+Generic build information can be found [HERE](https://github.com/realsetvin/vkax/blob/master/doc/build-generic.md).*)
+<br/>
+<br/>
+
+### Install Dependencies
+First we must install the relevant dependencies. **Copy and paste** the following code into a terminal console on Ubuntu
+<br/>
 
 ```
-sudo apt-get install curl build-essential libtool autotools-dev automake pkg-config python3 bsdmainutils bison &&
+sudo apt-get install curl build-essential libtool autotools-dev automake pkg-config python3 bsdmainutils bison nohang
 
 ```
+
+### Building from Source
+After installing the prerequisites, we can **build the daemon from source**
+```
+sudo apt update && sudo apt upgrade &&
+git clone https://github.com/realsetvin/vkax &&
+cd vkax/depends/ &&
+chmod +x conf* &&
+make &&
+cd .. &&
+./autogen.sh &&
+./configure --disable-tests –disable-bench --without-gui --prefix=$PWD/depends/x86_64-pc-linux-gnu/ &&
+make
+```
+<br/>
+
+### Starting the Daemon
+Using **`systemd`** we can create a service which starts the VKAX daemon on boot, or restarts it after a crash
+<br/>
+<br/>
+
+The following command will open a **blank text editor**
+
+```
+sudo nano 
+```
+
+You will **copy and paste** the following code into the blank text file. (CTRL + C to copy and CTRL + V to pase) 
+
+<br/>
+To save the text file press 
