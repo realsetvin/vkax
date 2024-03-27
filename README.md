@@ -37,7 +37,8 @@ Generic build information can be found [HERE](https://github.com/realsetvin/vkax
 <br/>
 
 ### Install Dependencies
-First we must install the relevant dependencies. **Copy and paste** the following code into a terminal console on Ubuntu
+First we must install the relevant dependencies. **Copy and paste** the following code into a terminal console on Ubuntu (**CTRL + C** to copy and **CTRL + V** to paste) 
+
 <br/>
 
 ```
@@ -57,20 +58,35 @@ cd .. &&
 ./autogen.sh &&
 ./configure --disable-tests –disable-bench --without-gui --prefix=$PWD/depends/x86_64-pc-linux-gnu/ &&
 make
+r<br/>
+
+Then run the following command to clean up the build files
 ```
+mkdkir /.vkax/
+mv ~/vkax/src/vkax-cli ~/vkax/src/vkaxd /.vkax/
+rm -r ~/vkax/
+```
+
 
 ### Starting the Daemon
-Using **`systemd`** we can create a service which starts the VKAX daemon on boot, or restarts it after a crash
+Using **`systemd`** we can create a service which starts the VKAX daemon on boot, and restarts it after a crash
 <br/>
 <br/>
 
-The following command will open a **blank text editor**
-
+First become a "**super user**"
 ```
-sudo nano 
+sudo su
+```
+Then create and enable the systemd service
+```
+sudo touch /etc/systemd/system/vkax.service
+sudo echo -e "[Unit]\nDescription=vkax daemon control service\n\n[Service]\nType=forking\nRestart=on-failure\nRestartSec=50s\nExecStartPre=/bin/sleep 5\nWorkingDirectory=/.vkaxcore/\nExecStart=/.vkaxcore/vkaxd\nRemainAfterExit=yes\n\n[Install]\nWantedBy=multi-user.target" >> /etc/systemd/system/vkax.service
+sudo systemctl enable vkax
+```
+<br/>
+
+Reboot for changes to take affect
+```
+sudo reboot
 ```
 
-You will **copy and paste** the below text into the blank file. (**CTRL + C** to copy and **CTRL + V** to paste) 
-
-<br/>
-To save the text file press 
