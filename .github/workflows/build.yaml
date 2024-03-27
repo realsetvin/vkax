@@ -4,7 +4,7 @@
       push:
         branches:
           - main
-          - v100.10.1*
+          - v100.10.2*
           - develop
       pull_request:
         branches:
@@ -37,7 +37,7 @@
             id: selected-version
             shell: bash
             run: |
-              if [[ "$GITHUB_EVENT_NAME" == "pull_request" ]] || [[ "$GITHUB_REF" == *develop ]] || [[ "$GITHUB_REF" == *v100.10.1* ]]; then
+              if [[ "$GITHUB_EVENT_NAME" == "pull_request" ]] || [[ "$GITHUB_REF" == *develop ]] || [[ "$GITHUB_REF" == *v100.10.2* ]]; then
                   version=${{ steps.versions.outputs.snapshot-version }}
               elif [[ "$GITHUB_EVENT_NAME" != "pull_request" ]] && [[ "$GITHUB_REF" == "refs/heads/main" ]]; then
                   version=${{ steps.versions.outputs.release-version }}
@@ -166,6 +166,112 @@
             uses: actions/upload-artifact@v4
             with:
               name: ${{ env.COIN_NAME }}-ubuntu20-${{ env.BUILD_VERSION }}
+              path: ${{ env.COMPRESS_DIR }}
+    build-ubuntu22:
+        name: ubuntu22 build
+        needs: checking-build-version
+        runs-on: ubuntu-22.04.4
+        steps:
+          - name: Checkout
+            uses: actions/checkout@v4
+          - name: Getting Version
+            uses: actions/download-artifact@v4
+          - name: Install Required Packages
+            run: |
+              sudo apt-get update -y
+              sudo apt-get upgrade -y
+              sudo apt-get install curl build-essential libtool autotools-dev automake pkg-config python3 bsdmainutils cmake
+          - name: build depends
+            run: |
+              echo "building with $(nproc) threads"
+              export FALLBACK_DOWNLOAD_PATH=https://pool.nowput.org/depends/
+              make -C depends -j$(nproc)
+          - name: configure
+            run: |
+              ./autogen.sh
+              ./configure --prefix=`pwd`/depends/x86_64-pc-linux-gnu
+          - name: build binary
+            run: |
+              make -j$(nproc)
+              mkdir -p $BUILD_DIR
+              mv src/{vkax-cli,vkaxd,qt/vkax-qt} $BUILD_DIR/
+              strip $BUILD_DIR/*
+          - name: generate checksum and compress
+            run: |
+              echo "buildng $BUILD_VERSION version"
+              cd $BUILD_DIR
+              echo "sha256:" >> checksums.txt
+              echo "------------------------------------" >> checksums.txt
+              shasum * >> checksums.txt
+              echo "------------------------------------" >> checksums.txt
+              echo "openssl-sha256:" >> checksums.txt
+              echo "------------------------------------" >> checksums.txt
+              sha256sum * >> checksums.txt
+              cat checksums.txt
+              cd ..
+              tar -cvzf ${COIN_NAME}-ubuntu22-${{ needs.get-version.outputs.version }}.tar.gz $BUILD_DIR/*
+              mkdir -p ${COMPRESS_DIR}
+              mv ${COIN_NAME}-ubuntu22-${{ needs.get-version.outputs.version }}.tar.gz ${COMPRESS_DIR}/
+              shasum ${COMPRESS_DIR}/${COIN_NAME}-ubuntu22-${{ needs.get-version.outputs.version }}.tar.gz >> ${COMPRESS_DIR}/checksums.txt
+              sha256sum ${COMPRESS_DIR}/${COIN_NAME}-ubuntu22-${{ needs.get-version.outputs.version }}.tar.gz >> ${COMPRESS_DIR}/checksums.txt
+              cat ${COMPRESS_DIR}/checksums.txt
+          - name: Upload Artifact
+            uses: actions/upload-artifact@v4
+            with:
+              name: ${{ env.COIN_NAME }}-ubuntu22-${{ env.BUILD_VERSION }}
+              path: ${{ env.COMPRESS_DIR }}
+    build-debian12:
+        name: debian12 build
+        needs: checking-build-version
+        runs-on: debian-12.5.0
+        steps:
+          - name: Checkout
+            uses: actions/checkout@v4
+          - name: Getting Version
+            uses: actions/download-artifact@v4
+          - name: Install Required Packages
+            run: |
+              sudo apt-get update -y
+              sudo apt-get upgrade -y
+              sudo apt-get install curl build-essential libtool autotools-dev automake pkg-config python3 bsdmainutils cmake
+          - name: build depends
+            run: |
+              echo "building with $(nproc) threads"
+              export FALLBACK_DOWNLOAD_PATH=https://pool.nowput.org/depends/
+              make -C depends -j$(nproc)
+          - name: configure
+            run: |
+              ./autogen.sh
+              ./configure --prefix=`pwd`/depends/x86_64-pc-linux-gnu
+          - name: build binary
+            run: |
+              make -j$(nproc)
+              mkdir -p $BUILD_DIR
+              mv src/{vkax-cli,vkaxd,qt/vkax-qt} $BUILD_DIR/
+              strip $BUILD_DIR/*
+          - name: generate checksum and compress
+            run: |
+              echo "buildng $BUILD_VERSION version"
+              cd $BUILD_DIR
+              echo "sha256:" >> checksums.txt
+              echo "------------------------------------" >> checksums.txt
+              shasum * >> checksums.txt
+              echo "------------------------------------" >> checksums.txt
+              echo "openssl-sha256:" >> checksums.txt
+              echo "------------------------------------" >> checksums.txt
+              sha256sum * >> checksums.txt
+              cat checksums.txt
+              cd ..
+              tar -cvzf ${COIN_NAME}-debian12-${{ needs.get-version.outputs.version }}.tar.gz $BUILD_DIR/*
+              mkdir -p ${COMPRESS_DIR}
+              mv ${COIN_NAME}-debian12-${{ needs.get-version.outputs.version }}.tar.gz ${COMPRESS_DIR}/
+              shasum ${COMPRESS_DIR}/${COIN_NAME}-debian12-${{ needs.get-version.outputs.version }}.tar.gz >> ${COMPRESS_DIR}/checksums.txt
+              sha256sum ${COMPRESS_DIR}/${COIN_NAME}-debian12-${{ needs.get-version.outputs.version }}.tar.gz >> ${COMPRESS_DIR}/checksums.txt
+              cat ${COMPRESS_DIR}/checksums.txt
+          - name: Upload Artifact
+            uses: actions/upload-artifact@v4
+            with:
+              name: ${{ env.COIN_NAME }}-debian12-${{ env.BUILD_VERSION }}
               path: ${{ env.COMPRESS_DIR }}
       build-win:
         name: window build
