@@ -74,7 +74,7 @@ Using **`systemd`** we can create a service which starts the VKAX daemon on boot
 <br/>
 <br/>
 
-First become a "**Super User**" (required)
+Become a "**Super User**"
 ```
 sudo su
 ```
