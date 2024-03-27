@@ -1,10 +1,10 @@
 # VKAX Remote Procedure Calls
 
-## OverviewVKAX
+## Overview
 
 VKAX Core provides a remote procedure call (RPC) interface for various administrative tasks, [wallet](../resources/glossary.md#wallet) operations, and queries about [network](../resources/glossary.md#network) and [block chain](../resources/glossary.md#block-chain) data.
 
-Open-source client libraries for the RPC interface are readily available in most modern programming languages, so you probably don't need to write your own from scratch. VKAX Core also ships with its own compiled C++ RPC client, `VKAX-cli`, located in the `bin` directory alongside `VKAXd` and `VKAX-qt`. The `VKAX-cli` program can be used as a command-line interface (CLI) to VKAX Core or for making RPC calls from applications written in languages lacking a suitable native client. The remainder of this section describes the VKAX Core RPC protocol in detail.
+Open-source client libraries for the RPC interface are readily available in most modern programming languages, so you probably don't need to write your own from scratch. VKAX Core also ships with its own compiled C++ RPC client, `vkax-cli`, located in the `bin` directory alongside `VKAXd` and `vkax-qt`. The `vkax-cli` program can be used as a command-line interface (CLI) to VKAX Core or for making RPC calls from applications written in languages lacking a suitable native client. The remainder of this section describes the VKAX Core RPC protocol in detail.
 
 > 📘 VKAX Core Configuration
 >
@@ -12,7 +12,7 @@ Open-source client libraries for the RPC interface are readily available in most
 VKAX
 ### Enabling RPC
 
-If you start VKAX Core using `VKAX-qt`, the RPC interface is disabled by default. To enable it, set `server=1` in `VKAX.conf` or supply the `-server` argument when invoking the program. If you start VKAX Core using `VKAXd`, the RPC interface is enabled by default.
+If you start VKAX Core using `vkax-qt`, the RPC interface is disabled by default. To enable it, set `server=1` in `VKAX.conf` or supply the `-server` argument when invoking the program. If you start VKAX Core using `VKAXd`, the RPC interface is enabled by default.
 
 ### Basic Security
 
@@ -142,16 +142,16 @@ As an example, here is the JSON-RPC request object for the hash of the [genesis 
 }
 ```
 
-The command to send this request using `VKAX-cli` is:
+The command to send this request using `vkax-cli` is:
 
 ```shell Shell
-VKAX-cli getblockhash 0
+vkax-cli getblockhash 0
 ```
 
-The command to send this request using `VKAX-cli` with named parameters is:
+The command to send this request using `vkax-cli` with named parameters is:
 
 ```shell Shell
-VKAX-cli -named getblockhash height=0
+vkax-cli -named getblockhash height=0
 ```
 
 Alternatively, we could `POST` this request using the cURL command-line program as follows:
@@ -180,7 +180,7 @@ The HTTP response data for this request would be:
 >
 > Note: In order to minimize its size, the raw JSON response from VKAX Core doesn't include any extraneous whitespace characters.
 
-Here whitespace has been added to make the object more readable. `VKAX-cli` also transforms the raw response to make it more human-readable. It:
+Here whitespace has been added to make the object more readable. `vkax-cli` also transforms the raw response to make it more human-readable. It:
 
 * Adds whitespace indentation to JSON objects
 * Expands escaped newline characters ("\n") into actual newlines
@@ -188,7 +188,7 @@ Here whitespace has been added to make the object more readable. `VKAX-cli` also
 * Strips the outer double-quotes around `result`s of type string
 * Returns only the `error` field if there's an error
 
-Continuing with the example above, the output from the `VKAX-cli` command would be simply:
+Continuing with the example above, the output from the `vkax-cli` command would be simply:
 
 ```text
 00000bafbc94add76cb75e2ec92894837288a481e5c005f6563d91623bf8bc2c
@@ -205,20 +205,20 @@ the same time, wallet-related RPCs require providing the wallet name when more
 than one wallet file is loaded. This is to ensure the RPC command is executed
 using the correct wallet.
 
-**VKAX-cli Example**
+**vkax-cli Example**
 
-Use the VKAX-cli `-rpcwallet` option to specify the path of the wallet file to
+Use the vkax-cli `-rpcwallet` option to specify the path of the wallet file to
 access, for example:
 
 ```shell
-VKAX-cli -rpcwallet=<wallet-filename> <command>
+vkax-cli -rpcwallet=<wallet-filename> <command>
 ```
 
 To use the default wallet, use `""` for the wallet filename as shown in the
 example below:
 
 ```shell
-VKAX-cli -rpcwallet="" getwalletinfo
+vkax-cli -rpcwallet="" getwalletinfo
 ```
 
 **JSON-RPC Example**
@@ -279,7 +279,7 @@ If there's an error processing a request, VKAX Core sets the `result` field to `
 }
 ```
 
-If `VKAX-cli` encounters an error, it exits with a non-zero status code and outputs the `error` field as text to the process's standard error stream:
+If `vkax-cli` encounters an error, it exits with a non-zero status code and outputs the `error` field as text to the process's standard error stream:
 
 ```text
 error code: -8
@@ -289,7 +289,7 @@ Block height out of range
 
 ### Batch Requests
 
-The RPC interface supports request batching as described in [version 2.0 of the JSON-RPC specification](http://www.jsonrpc.org/specification#batch). To initiate multiple RPC requests within a single HTTP request, a client can `POST` a JSON array filled with Request objects. The HTTP response data is then a JSON array filled with the corresponding Response objects. Depending on your usage pattern, request batching may provide significant performance gains. The `VKAX-cli` RPC client does not support batch requests.
+The RPC interface supports request batching as described in [version 2.0 of the JSON-RPC specification](http://www.jsonrpc.org/specification#batch). To initiate multiple RPC requests within a single HTTP request, a client can `POST` a JSON array filled with Request objects. The HTTP response data is then a JSON array filled with the corresponding Response objects. Depending on your usage pattern, request batching may provide significant performance gains. The `vkax-cli` RPC client does not support batch requests.
 
 ```shell
 curl --user 'my_username:my_secret_password' --data-binary '''
@@ -308,10 +308,10 @@ curl --user 'my_username:my_secret_password' --data-binary '''
   --header 'Content-Type: text/plain;' localhost:9998
 ```
 
-To keep this documentation compact and readable, the examples for each of the available RPC calls will be given as `VKAX-cli` commands:
+To keep this documentation compact and readable, the examples for each of the available RPC calls will be given as `vkax-cli` commands:
 
 ```shell
-VKAX-cli [options] <method name> <param1> <param2> ...
+vkax-cli [options] <method name> <param1> <param2> ...
 ```
 
 This translates into an JSON-RPC Request object of the form:
