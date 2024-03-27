@@ -34,7 +34,7 @@ Run the below commands in a terminal console one at a time. We will need to crea
 ```
 sudo adduser vkax-test
 ```
-**Login** as the VKAX user
+**Login** to become the VKAX user
 ```
 sudo su vkax-test
 ```
