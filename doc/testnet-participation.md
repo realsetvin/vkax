@@ -5,7 +5,7 @@ Ubuntu is an open source operating system which is easy to use, but still powerf
 <br/>
 
 > [!NOTE]
-> Learning how to use the VKAX Test Net, you will prepare yourself to do things like mine solo or run a masternode on the Main Net
+> Learning how to use the VKAX Test Net will prepare you to do things like mine solo or run a masternode on the Main Net
 <br/>
 
 ### Getting Ubuntu 
