@@ -1,6 +1,7 @@
 ## Participating in the VKAX Test Net
 VKAX is a decentralized project with ambitions to become fully community owned. To contribute you must learn how VKAX works. Follow this easy and simple guide to get started with VKAX test net development!
 <br/>
+<br/>
 
 > [!TIP]
 > Learning how to use the VKAX **Test Net** will prepare you to do things like mine solo or run a masternode on the **Main Net**
@@ -15,6 +16,7 @@ Meaning you can run an entire operating system with as little as 1 cpu core and 
 Some local examples include, a **Rasberry Pi**, old hardware like a **Laptop** or an **Unused PC** - or even from within your main PC using [**Virtualbox**](https://duckduckgo.com/?q=how+to+install+ubuntu+on+virtual+box) or [**Vmware Workstation**](https://duckduckgo.com/?q=how+to+install+ubuntu+on+vmware+workstation)
 
 If you do not have any hardware resources available or you want to run multiple nodes, there is a [**list of services which offer free trials or an always free option**](https://linktr.ee/setvin)
+<br/>
 <br/>
 
 > [!WARNING]
