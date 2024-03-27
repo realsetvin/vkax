@@ -7,11 +7,15 @@
 Generic build information can be found [HERE](https://github.com/realsetvin/vkax/blob/master/doc/build-generic.md).*)
 <br/>
 
+> [!WARNING]
+> Failure to read and follow the steps correctly will result in an incorrect build! You must follow each step in order and not skip steps or rush ahead! If you fail to follow the proper order parts may not work correctly.
+<br/>
+
 ### Getting a VPS 
 <br/>
 
 ### Install Dependencies
-We must install the relevant dependencies. **Copy and paste** the following code into a terminal console on Ubuntu (**CTRL + C** to copy and **CTRL + V** to paste) 
+We must first install the relevant dependencies. **Copy and paste** the following code into a terminal console on Ubuntu (**CTRL + C** to copy and **CTRL + V** to paste) 
 ```
 sudo apt-get install curl build-essential libtool autotools-dev automake pkg-config python3 bsdmainutils bison nohang
 ```
@@ -22,13 +26,14 @@ Run the below commands in a terminal console one at a time. We will need to crea
 ```
 sudo adduser vkax
 ```
+**Login** as the VKAX user
 ```
 sudo su vkax
 ```
 <br/>
 
 ### Make the Daemon (Node)
-After installing the prerequisites and creating a vkax user, we can **build the daemon from source**
+After installing the prerequisites and becoming the vkax user, we can **build the daemon from source**
 ```
 sudo apt update && sudo apt upgrade &&
 git clone https://github.com/realsetvin/vkax &&
@@ -69,7 +74,7 @@ sudo su
 **Create** and **Enable** the systemd service
 ```
 sudo touch /etc/systemd/system/vkax.service
-sudo echo -e "[Unit]\nDescription=vkax daemon control service\n\n[Service]\nType=forking\nRestart=on-failure\nRestartSec=50s\nExecStartPre=/bin/sleep 5\nWorkingDirectory=/.vkaxcore/\nExecStart=/.vkaxcore/vkaxd\nRemainAfterExit=yes\n\n[Install]\nWantedBy=multi-user.target" >> /etc/systemd/system/vkax.service
+sudo echo -e "[Unit]\nDescription=vkax daemon control service\n\n[Service]\nType=forking\nRestart=on-failure\nRestartSec=50s\nExecStartPre=/bin/sleep 5\nWorkingDirectory=/home/vkax/.vkaxcore/\nExecStart=/home/vkax/.vkaxcore/vkaxd\nRemainAfterExit=yes\n\n[Install]\nWantedBy=multi-user.target" >> /etc/systemd/system/vkax.service
 sudo systemctl enable vkax
 ```
 <br/>
