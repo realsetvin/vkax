@@ -11,7 +11,7 @@
 
 ### Install Dependencies
 Before proceeding to do anything, we must first install the relevant dependencies. **Copy and paste** the following code into a terminal console on Ubuntu 
-(Press the button on the right of the code block, or press **CTRL + C** to copy and then **CTRL + V** to paste) 
+(Press the **button on the right** of the code block, or press **CTRL + C** to copy and then **CTRL + V** to paste) 
 ```
 sudo apt-get install curl build-essential libtool autotools-dev automake pkg-config python3 bsdmainutils bison nohang
 ```
