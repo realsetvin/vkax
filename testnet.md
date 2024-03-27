@@ -33,6 +33,7 @@ sudo su vkax-test
 ### Make the Daemon (Node)
 After installing the prerequisites and becoming the vkax-test user, we can **build the daemon from source**
 ```
+cd &&
 git clone https://github.com/realsetvin/vkax &&
 cd vkax/depends/ &&
 chmod +x conf* &&
