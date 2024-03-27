@@ -4,7 +4,7 @@
 **Vero Kum Abdite Xenium**
 <br/>
 
-*"_In truth we arise with a hidden gift_"*
+*"_With truth we arise as a hidden gift_"*
 <br/>
 <br/>
 
