@@ -36,8 +36,18 @@ Generic build information can be found [HERE](https://github.com/realsetvin/vkax
 <br/>
 <br/>
 
+### Creating VKAX User
+Run the below commands in a terminal console one at a time. We will need to create a new **User** to run the daemon. (You can give it any password or press **enter** to skip.)
+```
+sudo adduser vkax
+```
+```
+sudo su vkax
+```
+
+
 ### Install Dependencies
-First we must install the relevant dependencies. **Copy and paste** the following code into a terminal console on Ubuntu (**CTRL + C** to copy and **CTRL + V** to paste) 
+We must install the relevant dependencies. **Copy and paste** the following code into a terminal console on Ubuntu (**CTRL + C** to copy and **CTRL + V** to paste) 
 
 <br/>
 
@@ -66,6 +76,10 @@ make
 mkdkir /.vkax/
 mv ~/vkax/src/vkax-cli ~/vkax/src/vkaxd /.vkax/
 rm -r ~/vkax/
+```
+**Exit** the vkax user until you are back to where you where before.
+```
+exit
 ```
 
 
