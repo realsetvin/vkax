@@ -1,10 +1,3 @@
-```{eval-rst}
-.. _vkaxcore-arguments-and-commands-vkax-cli:
-.. meta::
-  :title: vkax-cli Wallet Arguments and Commands
-  :description: The section includes command-line option for accessing vkax Core RPCs via the vkax-cli application.
-```
-
 # vkax-cli
 
 The `vkax-cli` application provides a command-line option for accessing vkax Core RPCs.
@@ -13,7 +6,7 @@ The `vkax-cli` application provides a command-line option for accessing vkax Cor
 
 > 🚧 Multiple wallet support
 >
-> Since vkax Core 18.0 introduced the ability to have multiple wallets loaded at the same time, wallet-related RPCs require using the `-rpcwallet` option any time more than one wallet file is loaded. This is to ensure the RPC command is executed using the correct wallet. The syntax is:  
+> Since you may have multiple wallets loaded at the same time, wallet-related RPCs require using the `-rpcwallet` option any time more than one wallet file is loaded. This is to ensure the RPC command is executed using the correct wallet. The syntax is:  
 > `vkax-cli -rpcwallet=<wallet-name> <command>`
 
 ```bash Send command
