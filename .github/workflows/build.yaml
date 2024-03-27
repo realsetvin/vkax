@@ -127,7 +127,7 @@
           - name: Install Required Packages
             run: |
               brew install automake libtool pkg-config miniupnpc librsvg libnatpmp zeromq python
-              pip3 install ds_store mac_alias setuptools berkeley-db
+              pip3 install ds_store mac_alias setuptools
           - name: build depends
             run: |
               echo "building with $(nproc) threads"
@@ -136,7 +136,7 @@
           - name: configure
             run: |
               ./autogen.sh
-              ./configure --prefix=`pwd`/depends/x86_64-apple-darwin20.6.0
+              ./configure --prefix=`pwd`/depends/x86_64-apple-darwin21.6.0
           - name: build binary
             run: |
               make -j8
