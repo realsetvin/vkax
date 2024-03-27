@@ -16,7 +16,6 @@ We must install the relevant dependencies. **Copy and paste** the following code
 ```
 sudo apt-get install curl build-essential libtool autotools-dev automake pkg-config python3 bsdmainutils bison nohang
 ```
-<br/>
 
 ### Create VKAX User
 Run the below commands in a terminal console one at a time. We will need to create a new **User** to run the daemon. (You can give it any password or press **enter** to skip.)
