@@ -8,7 +8,7 @@ Generic build information can be found [HERE](https://github.com/realsetvin/vkax
 <br/>
 
 > [!WARNING]
-> Failure to read and follow the steps correctly will result in an incorrect build! You must follow each step in order and not skip steps or rush ahead! If you fail to follow the proper order parts may not work correctly.
+> Failure to follow instructions correctly may result in an incorrect build or having to restart from step 1! The order of commands is important! 
 <br/>
 
 ### Getting a VPS 
