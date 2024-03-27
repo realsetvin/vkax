@@ -16,9 +16,9 @@ Some local examples include, a rasberry pi, old hardware like a laptop or an unu
 
 If you do not have any hardware resources available or you want to run multiple nodes, there is a [**list of services which offer free trials or an always free option**](https://linktr.ee/setvin) for each individual.
 
-By learning how to use VKAX in the test net, you will prepare yourself to do things like mine solo or run a masternode by yourself on the main net.
+> [!NOTE]
+> By learning how to use the VKAX test net, you will prepare yourself to do things like mine solo or run a masternode by yourself on the main net.
 
-<br/>
 <br/>
 
 ### Install Dependencies
