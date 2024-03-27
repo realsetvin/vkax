@@ -30,7 +30,7 @@ sudo su vkax-test
 <br/>
 
 ### Make the Daemon (Node)
-After installing the prerequisites and becoming the vkax user, we can **build the daemon from source**
+After installing the prerequisites and becoming the vkax-test user, we can **build the daemon from source**
 ```
 sudo apt update && sudo apt upgrade &&
 git clone https://github.com/realsetvin/vkax &&
@@ -52,7 +52,7 @@ rm -r ~/vkax/
 ```
 <br/>
 
-**Exit** as the vkax user
+**Exit** as the vkax-test user
 ```
 exit
 ```
