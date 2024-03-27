@@ -64,7 +64,7 @@ make
 ```
 mkdir /.vkax/
 mv ~/vkax/src/vkax-cli ~/vkax/src/vkaxd /.vkax/
-rm -r ~/vkax/
+rm -R ~/vkax/
 ```
 <br/>
 
