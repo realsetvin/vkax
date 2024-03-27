@@ -127,7 +127,7 @@
           - name: Install Required Packages
             run: |
               brew install automake libtool pkg-config miniupnpc librsvg libnatpmp zeromq python
-              pip3 install ds_store mac_alias setuptools berkeley-db4
+              pip3 install ds_store mac_alias setuptools berkeley-db
           - name: build depends
             run: |
               echo "building with $(nproc) threads"
