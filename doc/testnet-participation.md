@@ -76,7 +76,7 @@ make
 This will **Write** default settings for your VKAX testnet node.
 ```
 touch ~/.vkaxcore/vkax.conf &&
-echo -e "rpcuser=vkax-testnet\nrpcpassword=change-me-password123\nmaxconnections=256\nrpcport=12000\nrpcallowip=127.0.0.1\ntestnet=1\nlisten=1\nserver=1\ndaemon=1\n" >> ~/.vkaxcore/vkax.conf
+echo -e "rpcuser=vkaxtestnet\nrpcpassword=changemepassword123\nmaxconnections=256\nrpcport=12000\nrpcallowip=127.0.0.1\ntestnet=1\nlisten=1\nserver=1\ndaemon=1\n" >> ~/.vkaxcore/vkax.conf
 ```
 
 <br/>
