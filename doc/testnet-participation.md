@@ -68,7 +68,7 @@ make
 exit
 ```
 > [!CAUTION]
-> If you forget to log out of the vkax-test user, the below commands will not work properly
+> If you forget to **log out** of the vkax-test user, the below commands **will not work** properly
 
 <br/>
 <br/>
