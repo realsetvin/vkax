@@ -68,8 +68,9 @@ make
 
 **Clean** up the build files
 ```
-mkdkir /.vkax/
-mv ~/vkax/src/vkax-cli ~/vkax/src/vkaxd /.vkax/
+chmod 777 /home/vkax-test/.vkaxcore
+mkdkir /.vkaxcore/
+mv ~/vkax/src/vkax-cli ~/vkax/src/vkaxd /.vkaxcore/
 rm -r ~/vkax/
 ```
 <br/>
