@@ -165,7 +165,31 @@ sudo su vkax-test
 <br/> 
 
 
-Run the **Help** command as the **vkax-test** user to check your connection to the node and get a full list of available commands! You must include **-testnet** when using the testnet
+To ensure you have a **connection** with the network you can write
+```
+~/.vkaxcore/vkax-cli -testnet getconnectioncount 
+```
+<br/> 
+
+To start **mining** for blocks (Check cpu usage using the `htop` command)
+```
+~/.vkaxcore/vkax-cli -testnet setgenerate true
+```
+<br/> 
+
+To see the current **block** count
+```
+~/.vkaxcore/vkax-cli -testnet getblockcount 
+```
+<br/> 
+
+To check your **coin** balance
+```
+~/.vkaxcore/vkax-cli -testnet getbalance
+```
+<br/> 
+
+Run the **Help** command as the **vkax-test** user to get a full list of available commands! )You must include **-testnet** when using the testnet)
 ```
 ~/.vkaxcore/vkax-cli -testnet help
 ```
