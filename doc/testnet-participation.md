@@ -6,7 +6,7 @@
 ### Getting Ubuntu 
 Ubuntu is an open source system which is easy to use, but still powerful and stable. This means that an entire operating system can function with as little as **1 cpu** core and less than **1 gig** of ram! To participate in the VKAX **Test Net** you will need an operational [**Ubuntu**](https://ubuntu.com/) system - either locally or with a cloud service. It is possible for anyone to run a Ubuntu system without difficulty or cost.
 
-Some local examples include, a **[Raspberry Pi](https://www.raspberrypi.com/)**, old hardware like a **[Laptop with Broken Screen](https://www.ebay.com/sch/i.html?_nkw=laptop+broken+screen)** or a **[Discarded PC](https://www.goodwillfinds.com/search/?q=computer)** - or even from within your main PC using [**Virtualbox**](https://duckduckgo.com/?q=how+to+install+ubuntu+on+virtual+box) or [**Vmware Workstation**](https://duckduckgo.com/?q=how+to+install+ubuntu+on+vmware+workstation)
+Some local examples include, a **[Raspberry Pi](https://www.raspberrypi.com/)**, old hardware like a **[Laptop with Broken Screen](https://www.ebay.com/sch/i.html?_nkw=laptop+broken+screen)**, a **[Discarded PC](https://www.goodwillfinds.com/search/?q=computer)** - or even from within your main PC using [**Virtualbox**](https://duckduckgo.com/?q=how+to+install+ubuntu+on+virtual+box) or [**Vmware Workstation**](https://duckduckgo.com/?q=how+to+install+ubuntu+on+vmware+workstation)
 
 If you do not have any hardware resources available or you want to run multiple nodes, there is a [**list of services which offer free trials or an always free option**](https://linktr.ee/setvin)
 
