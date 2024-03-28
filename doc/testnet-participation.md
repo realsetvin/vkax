@@ -120,7 +120,7 @@ sudo ufw default deny incoming &&
 sudo ufw default allow outgoing &&
 sudo ufw allow ssh &&
 sudo ufw allow 11110/tcp &&
-sudo ufw allow 19999/tcp &&
+sudo ufw allow 22220/tcp &&
 sudo ufw enable
 ```
 
