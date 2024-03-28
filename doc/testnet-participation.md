@@ -10,7 +10,7 @@ Some local examples include, a **Rasberry Pi**, old hardware like a **Used Lapto
 
 If you do not have any hardware resources available or you want to run multiple nodes, there is a [**list of services which offer free trials or an always free option**](https://linktr.ee/setvin)
 
-Because Ubuntu is open source and relies on decentralization, we should realize it shares an overlap of many of the ideals we believe in with crypto currencies! Understanding free and open source systems like Ubuntu will benefit anyone interested in learning how to master their experience and take full control! Relying on central services and paying for things which should be free is not beneficial to decentralization or genuine network growth. 
+Because Ubuntu is open source and relies on decentralization, we should realize it shares an overlap of many of the ideals we believe in with crypto currencies! Understanding free and open source systems like Ubuntu will benefit anyone interested in mastering their experience! Relying on central services and paying for things which should be free is not beneficial to decentralization or genuine network growth. 
 
 If you **don't have a few minutes** to learn something new, then you probably **do not have time** to invest in or mine crypto currencies without encoutering significant risk! Windows users are most often targeted for scams and hacks, so the value of learning linux can't be measured immediately. Remember, there is no such thing as a free lunch, or getting rich quick. If you want it, you must get it! 
 <br/>
