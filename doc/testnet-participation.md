@@ -4,12 +4,13 @@
 <br/>
 
 ### Getting Ubuntu 
-To participate in the VKAX Test Net you will need an operational [Ubuntu](https://ubuntu.com/) system - either locally or with a cloud service. Ubuntu is an open source operating system which is easy to use, but still powerful and stable. 
-Meaning you can run an entire operating system with as little as **1 cpu** core and less than **1 gig** of ram.
+To participate in the VKAX Test Net you will need an operational [Ubuntu](https://ubuntu.com/) system - either locally or with a cloud service. I know what you are thinking, but wait! Don't give up yet! It is possible to for almost anyone to run a Ubuntu system, one way or another. It wont be as difficult or as costly as you might imagine! Ubuntu is an open source operating system which is easy to use, but still powerful and stable. This means that anyone can run an entire operating system with as little as **1 cpu** core and less than **1 gig** of ram!
 
-Some local examples include, a **Rasberry Pi**, old hardware like a **Laptop** or an **Unused PC** - or even from within your main PC using [**Virtualbox**](https://duckduckgo.com/?q=how+to+install+ubuntu+on+virtual+box) or [**Vmware Workstation**](https://duckduckgo.com/?q=how+to+install+ubuntu+on+vmware+workstation)
+Some local examples include, a **Rasberry Pi**, old hardware like a **Used Laptop** or a **Discarded PC** - or even from within your main PC using [**Virtualbox**](https://duckduckgo.com/?q=how+to+install+ubuntu+on+virtual+box) or [**Vmware Workstation**](https://duckduckgo.com/?q=how+to+install+ubuntu+on+vmware+workstation)
 
 If you do not have any hardware resources available or you want to run multiple nodes, there is a [**list of services which offer free trials or an always free option**](https://linktr.ee/setvin)
+
+Why should you bother? Because Ubuntu is open source and relies on decentrlization, we should realize it shares an overlap of many of the ideals we claim to believe in with crypto currencies! Learning how to use Ubuntu will benefit anyone interested in learning how to master their experience and take full control. Relying on central services and paying for thing which are free should not be considered normal. If you **don't have a few minutes** to learn something new, then you **do not have time** to invest in or mine crypto currencies! Remember, there is no such thing as a free lunch, or getting rich quick. If you want it, you must get it! 
 <br/>
 <br/>
 
