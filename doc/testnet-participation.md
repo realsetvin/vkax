@@ -111,6 +111,7 @@ We can **Watch** the **Status** of our daemon at any time with the following com
 ```
 watch systemctl status vkax-test
 ```
+<br/>
 
 
 ## Using VKAX Test Net
@@ -120,7 +121,7 @@ watch systemctl status vkax-test
 
 **Login** as vkax-test user
 ```
-sudo su vkax
+sudo su vkax-test
 ```
 
 > [!IMPORTANT]  
