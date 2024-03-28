@@ -90,7 +90,7 @@ mkdir /home/vkax-test/.vkaxcore/
 mv /home/vkax-test/vkax/src/vkax-cli /home/vkax-test/vkax/src/vkaxd /home/vkax-test/.vkaxcore/
 rm -R /home/vkax-test/vkax/
 ```
-
+<br/>
 
 **Open** the Ports and Enable **Firewall**
 ```
