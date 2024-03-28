@@ -164,9 +164,10 @@ sudo su vkax-test
 <br\>
 <br\> 
 
+
 Run the **Help** command as the **vkax-test** user to check your connection to the node and get a full list of available commands!
 ```
-~/.vkaxcore/vkax-cli help
+~/.vkaxcore/vkax-cli -testnet help
 ```
 
 
