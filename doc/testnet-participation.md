@@ -35,8 +35,9 @@ sudo apt-get install curl build-essential libtool autotools-dev automake pkg-con
 Creating a swap file will use some of the storage space but provide the system additional memory handling functions, making crashes on low end systems less likely.
 ```
 sudo fallocate -l 1G /swapfile &&
-sudo mkswap /swapfile
-&& sudo chmod 0600 /swapfile && sudo swapon /swapfile &&
+sudo mkswap /swapfile &&
+sudo chmod 0600 /swapfile &&
+sudo swapon /swapfile &&
 sudo swapon -s &&
 echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 ```
