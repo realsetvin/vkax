@@ -97,8 +97,8 @@ sudo su
 
 **Clean** up the build files
 ```
-chmod 777 /home/vkax-test/.vkaxcore &&
 mkdir /home/vkax-test/.vkaxcore/ &&
+chmod 777 /home/vkax-test/.vkaxcore &&
 mv /home/vkax-test/vkax/src/vkax-cli /home/vkax-test/vkax/src/vkaxd /home/vkax-test/.vkaxcore/ &&
 rm -R /home/vkax-test/vkax/
 ```
