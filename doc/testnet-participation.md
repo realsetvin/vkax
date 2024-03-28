@@ -50,7 +50,7 @@ cd &&
 git clone https://github.com/realsetvin/vkax &&
 cd vkax/depends/ &&
 chmod +x conf* &&
-make &&
+make NO_QT=1 &&
 cd .. &&
 ./autogen.sh &&
 ./configure --disable-tests --disable-bench --without-gui --prefix=$PWD/depends/x86_64-pc-linux-gnu/ &&
