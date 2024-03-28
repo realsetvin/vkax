@@ -73,18 +73,6 @@ exit
 <br/>
 <br/>
 
-<br/>
-
-**Clean** up the build files
-```
-sudo mkdir /home/vkax-test/.vkaxcore/
-sudo mv /home/vkax-test/vkax/src/vkax-cli /home/vkax-test/vkax/src/vkaxd /home/vkax-test/.vkaxcore/
-sudo rm -R /home/vkax-test/vkax/
-```
-<br/>
-
-<br/>
-
 ### Starting the Daemon
 Using **`systemd`** we can create a service which starts the VKAX daemon on boot, and restarts it after a crash
 <br/>
@@ -94,6 +82,16 @@ Become a **Super User** first
 ```
 sudo su
 ```
+<br/>
+
+**Clean** up the build files
+```
+mkdir /home/vkax-test/.vkaxcore/
+mv /home/vkax-test/vkax/src/vkax-cli /home/vkax-test/vkax/src/vkaxd /home/vkax-test/.vkaxcore/
+rm -R /home/vkax-test/vkax/
+```
+
+<br/>
 
 **Create** and **Enable** the systemd service
 ```
