@@ -111,3 +111,28 @@ We can **Watch** the **Status** of our daemon at any time with the following com
 ```
 watch systemctl status vkax-test
 ```
+
+
+## Using VKAX Test Net
+
+
+<br/>
+
+**Login** as vkax-test user
+```
+sudo su vkax
+```
+
+> [!IMPORTANT]  
+> Always remember to login as vkax-test before running commands, and to log out with `exit` or close the terminal when complete. The daemon will continue to run in the background.
+
+
+
+
+
+
+
+
+
+
+
