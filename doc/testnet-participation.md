@@ -1,9 +1,9 @@
-## Participating in the VKAX Test Net
+# Participating in the VKAX Test Net
 > [!TIP]
 > Learning how to use the VKAX **Test Net** will prepare you to do things like mine solo or run a masternode on the **Main Net**
 <br/>
 
-### Getting Ubuntu 
+## Getting Ubuntu 
 Ubuntu is an open source system which is easy to use, but still powerful and stable. This means that an entire operating system can function with as little as **1 cpu** core and less than **1 gig** of ram! To participate in the VKAX **Test Net** you will need an operational [**Ubuntu**](https://ubuntu.com/) system - either locally or with a cloud service. It is possible for anyone to run a Ubuntu system without difficulty or cost.
 
 Some local examples include, a **[Raspberry Pi](https://www.raspberrypi.com/)**, old hardware like a **[Laptop with Broken Screen](https://www.ebay.com/sch/i.html?_nkw=laptop+broken+screen)**, a **[Discarded PC](https://www.goodwillfinds.com/search/?q=computer)** - or even from within your main PC using [**Virtualbox**](https://duckduckgo.com/?q=how+to+install+ubuntu+on+virtual+box) or [**Vmware Workstation**](https://duckduckgo.com/?q=how+to+install+ubuntu+on+vmware+workstation)
@@ -31,7 +31,7 @@ sudo apt-get install curl build-essential libtool autotools-dev automake pkg-con
 ```
 <br/>
 
-## Enable Swap
+### Enable Swap
 Creating a swap file will use some of the storage space but provide the system additional memory handling functions, making crashes on low end systems less likely.
 ```
 sudo fallocate -l 1G /swapfile &&
