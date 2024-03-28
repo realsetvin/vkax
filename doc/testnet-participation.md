@@ -47,11 +47,11 @@ cd &&
 git clone https://github.com/realsetvin/vkax &&
 cd vkax/depends/ &&
 chmod +x conf* &&
-make -j$(nproc) &&
+make &&
 cd .. &&
 ./autogen.sh &&
 ./configure --disable-tests --disable-bench --without-gui --prefix=$PWD/depends/x86_64-pc-linux-gnu/ &&
-make -j$(nproc)
+make
 ```
 > [!NOTE]  
 > The build will take a long time. Please do not close the system while the script is working
