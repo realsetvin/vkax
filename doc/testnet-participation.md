@@ -10,7 +10,9 @@ Some local examples include, a **Rasberry Pi**, old hardware like a **Used Lapto
 
 If you do not have any hardware resources available or you want to run multiple nodes, there is a [**list of services which offer free trials or an always free option**](https://linktr.ee/setvin)
 
-Why should you bother? Because Ubuntu is open source and relies on decentrlization, we should realize it shares an overlap of many of the ideals we claim to believe in with crypto currencies! Learning how to use Ubuntu will benefit anyone interested in learning how to master their experience and take full control. Relying on central services and paying for thing which are free should not be considered normal. If you **don't have a few minutes** to learn something new, then you **do not have time** to invest in or mine crypto currencies! Remember, there is no such thing as a free lunch, or getting rich quick. If you want it, you must get it! 
+Why should we bother? Because Ubuntu is open source and relies on decentrlization, we should realize it shares an overlap of many of the ideals we claim to believe in with crypto currencies! Learning how to use Ubuntu will benefit anyone interested in learning how to master their experience and take full control. Relying on central services and paying for thing which are free should not be considered normal. 
+
+If you **don't have a few minutes** to learn something new, then you **do not have time** to invest in or mine crypto currencies! Remember, there is no such thing as a free lunch, or getting rich quick. If you want it, you must get it! 
 <br/>
 <br/>
 
