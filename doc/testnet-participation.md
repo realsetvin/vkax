@@ -27,7 +27,7 @@ Before proceeding to do anything, we must first install the relevant dependencie
 (Press the **button on the right** of the code block, or press **CTRL + C** to copy and then **CTRL + V** to paste) 
 ```
 sudo apt update -y && sudo apt upgrade -y
-sudo apt-get install curl build-essential libtool autotools-dev automake pkg-config python3 bsdmainutils bison nohang &&
+sudo apt-get install curl build-essential libtool autotools-dev automake pkg-config python3 bsdmainutils screen hwloc bison nohang &&
 ```
 <br/>
 
@@ -89,6 +89,19 @@ sudo su
 mkdir /home/vkax-test/.vkaxcore/
 mv /home/vkax-test/vkax/src/vkax-cli /home/vkax-test/vkax/src/vkaxd /home/vkax-test/.vkaxcore/
 rm -R /home/vkax-test/vkax/
+```
+
+
+**Open** the Ports and Enable **Firewall**
+```
+sudo apt update -y && sudo apt upgrade -y &&
+sudo apt install ufw &&
+sudo ufw default deny incoming &&
+sudo ufw default allow outgoing &&
+sudo ufw allow ssh &&
+sudo ufw allow 11110/tcp &&
+sudo ufw allow 19999/tcp &&
+sudo ufw enable
 ```
 
 <br/>
