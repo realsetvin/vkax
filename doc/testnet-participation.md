@@ -5,7 +5,7 @@
 
 ### Getting Ubuntu 
 To participate in the VKAX Test Net you will need an operational [Ubuntu](https://ubuntu.com/) system - either locally or with a cloud service. Ubuntu is an open source operating system which is easy to use, but still powerful and stable. 
-Meaning you can run an entire operating system with as little as 1 cpu core and less than 1 gig of ram.
+Meaning you can run an entire operating system with as little as **1 cpu** core and less than **1 gig** of ram.
 
 Some local examples include, a **Rasberry Pi**, old hardware like a **Laptop** or an **Unused PC** - or even from within your main PC using [**Virtualbox**](https://duckduckgo.com/?q=how+to+install+ubuntu+on+virtual+box) or [**Vmware Workstation**](https://duckduckgo.com/?q=how+to+install+ubuntu+on+vmware+workstation)
 
