@@ -161,8 +161,13 @@ sudo su vkax-test
 > Always remember to login as vkax-test before running commands, and to log out with `exit` or close the terminal when complete. The daemon will continue to run in the background.
 
 
+<br\>
+<br\> 
 
-
+Run the **Help** command as the **vkax-test** user to check your connection to the node and get a full list of available commands!
+```
+~/.vkaxcore/vkax-cli help
+```
 
 
 
