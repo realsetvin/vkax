@@ -71,6 +71,7 @@ exit
 > If you forget to log out of the vkax-test user, the below commands will not work properly
 
 <br/>
+<br/>
 
 **Clean** up the build files
 ```
