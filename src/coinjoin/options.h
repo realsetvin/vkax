@@ -23,7 +23,7 @@ static constexpr int MAX_COINJOIN_DENOMS_HARDCAP = 100000;
 static constexpr int MAX_COINJOIN_AMOUNT = MAX_MONEY / (1000000 * COIN);
 static constexpr int DEFAULT_COINJOIN_SESSIONS = 4;
 static constexpr int DEFAULT_COINJOIN_ROUNDS = 4;
-static constexpr int DEFAULT_COINJOIN_AMOUNT = 1000;
+static constexpr int DEFAULT_COINJOIN_AMOUNT = 1000000;
 static constexpr int DEFAULT_COINJOIN_DENOMS_GOAL = 50;
 static constexpr int DEFAULT_COINJOIN_DENOMS_HARDCAP = 300;
 
