@@ -218,7 +218,7 @@ htop
 <br/> 
 <br/> 
 
-After finding a block you will get sent coins. Use this command to see the last 10 transations
+After finding a block you will get **sent coins**. Use this command to see the **last 10** transations
 ```
 ~/.vkaxcore/vkax-cli -testnet listtransactions
 ```
