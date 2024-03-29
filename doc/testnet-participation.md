@@ -27,7 +27,7 @@ Before proceeding to do anything, we must first install the relevant dependencie
 (Press the **button on the right** of the code block, or press **CTRL + C** to copy and then **CTRL + V** to paste) 
 ```
 sudo apt update -y && sudo apt upgrade -y &&
-sudo apt-get install curl build-essential libtool autotools-dev automake pkg-config python3 bsdmainutils screen hwloc bison nohang
+sudo apt-get install curl build-essential libtool autotools-dev automake pkg-config python3 bsdmainutils screen hwloc bison nohang htop
 ```
 <br/>
 
@@ -177,13 +177,28 @@ To ensure you have a **connection** with the network you can write
 ```
 <br/> 
 
-To start **mining** for blocks (Check cpu usage using the `htop` command)
+To start **mining** for blocks
 ```
 ~/.vkaxcore/vkax-cli -testnet setgenerate true
 ```
 <br/> 
 
+
+Check **cpu usage** after mining using the **`htop`** command
+```
+htop
+```
+
+<br/> 
+
+To check the status of the testnet daemon's **debug log**
+```
+watch tail ~/.vkaxcore/testnet3/debug.log -n25
+``
+
+<br/> 
 To see the current **block** count
+
 ```
 ~/.vkaxcore/vkax-cli -testnet getblockcount 
 ```
