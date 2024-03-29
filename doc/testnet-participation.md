@@ -188,7 +188,8 @@ Display your seed phrase with the below command
 ```
 ~/.vkaxcore/vkax-cli -testnet dumphdinfo
 ```
-***WRITE THIS DOWN!***
+> [!CAUTION]
+> ***WRITE THIS DOWN!***
 <br/> 
 Do not store your **confidential seed phrase** on a computer or on a phone! **Do not share** this phrase with anyone, or leave it out for people to find! There is no support ticket or central body which can recover your coins, so you should **never share these words with anyone! Ever! For any reason!** You can use this same **seed phrase** forever with VKAX, even on the main net! You can save yourself a lot of time by **writing this down now**. Hackers cannot access a sheet of paper in your sock drawer!
 
