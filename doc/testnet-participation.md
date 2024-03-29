@@ -240,7 +240,11 @@ To check your **coin** balance (will only display mature blocks after 200 confir
 <br/> 
 
 ### More VKAX Commands
-[Please refer to the complete documented list of VKAX CLI Commands!](https://github.com/realsetvin/vkax/blob/master/doc/vkax-cli-wallet-arguments-and-commands.md)
+[VKAX Legacy Command Line Reference](https://github.com/realsetvin/vkax/blob/master/doc/vkax-command-line-rpc-api-reference.md)
+<br/>
+[VKAX CLI Arguments & Commands](https://github.com/realsetvin/vkax/blob/master/doc/vkax-cli-wallet-arguments-and-commands.md)
+<br/>
+[VKAX Remote Procedure Calls (RPC)](https://github.com/realsetvin/vkax/blob/master/doc/vkax-remote-procedure-calls.md)
 
 <br/> 
 
