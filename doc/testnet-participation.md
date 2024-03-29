@@ -258,9 +258,10 @@ To check your **coin** balance (will only display mature blocks after 200 confir
 <br/> 
 
 To **Stop Mining**
-``
+```
 ~/.vkaxcore/vkax-cli -testnet setgenerate false 0
-``
+```
+
 <br/> 
 <br/> 
 
