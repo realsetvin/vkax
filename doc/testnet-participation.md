@@ -263,8 +263,6 @@ To **Stop Mining**
 ```
 
 <br/> 
-<br/> 
-
 
 ## More VKAX Commands
 [VKAX Legacy Command Line Reference](https://github.com/realsetvin/vkax/blob/master/doc/vkax-command-line-rpc-api-reference.md)
@@ -273,7 +271,6 @@ To **Stop Mining**
 <br/>
 [VKAX Remote Procedure Calls (RPC)](https://github.com/realsetvin/vkax/blob/master/doc/vkax-remote-procedure-calls.md)
 
-<br/> 
 <br/> 
 
 ## Conclusion
