@@ -189,10 +189,10 @@ Display your seed phrase with the below command
 ~/.vkaxcore/vkax-cli -testnet dumphdinfo
 ```
 ***WRITE THIS DOWN!***
-
 <br/> 
-
 Do not store this on a computer or on a phone! You can use this same **seed phrase** forever with VKAX, even on the main net! You can save yourself a lot of time by **writing this down now**. Hackers cannot access a sheet of paper in your sock drawer! 
+<br/> 
+<br/> 
 
 ## Basic VKAX Commands
 
