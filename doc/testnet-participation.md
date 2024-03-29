@@ -83,7 +83,7 @@ This will **Write** default settings for your VKAX testnet node.
 ```
 mkdir ~/.vkaxcore/
 touch ~/.vkaxcore/vkax.conf &&
-echo -e "rpcuser=vkaxtestnet\nrpcpassword=changemepassword123\nmaxconnections=256\nrpcallowip=127.0.0.1\ntestnet=1\nlisten=1\nserver=1\ndaemon=1\n" >> ~/.vkaxcore/vkax.conf
+echo -e "rpcuser=vkaxtestnet\nrpcpassword=changemepassword123\nmaxconnections=256\nrpcallowip=127.0.0.1\ntestnet=1\nlisten=1\nserver=1\ndaemon=1\nusehd=1\n" >> ~/.vkaxcore/vkax.conf
 ```
 
 <br/>
@@ -183,6 +183,14 @@ Run the **Help** command as the **vkax-test** user to get a full list of availab
 ```
 <br/> 
 
+# Getting your HD Seed Phrase 
+Display your seed phrase with the below command
+```
+~/.vkaxcore/vkax-cli -testnet dumphdinfo
+```
+<br/> 
+***WRITE THIS DOWN!** Do not store this on a computer or on a phone! You can use this same **seed phrase** forever with VKAX, even on the main net! You can save yourself a lot of time by **writing this down now**. Hackers cannot access a sheet of paper in your sock drawer! 
+
 ## Basic VKAX Commands
 
 <br/> 
@@ -238,6 +246,13 @@ To check your **coin** balance (will only display mature blocks after 200 confir
 ```
 <br/> 
 <br/> 
+
+To **Stop Mining**
+``
+~/.vkaxcore/vkax-cli -testnet setgenerate false 0
+``
+
+
 
 ### More VKAX Commands
 [VKAX Legacy Command Line Reference](https://github.com/realsetvin/vkax/blob/master/doc/vkax-command-line-rpc-api-reference.md)
