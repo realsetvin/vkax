@@ -201,6 +201,7 @@ To start **mining** for blocks
 ```
 
 The only indication that mining has started is this output which shows us how many cores are running.
+
 ![image](https://github.com/realsetvin/vkax/assets/117243445/f61bccb1-2097-4d99-a854-e8dc410cdfa9)
 
 <br/> 
