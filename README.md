@@ -12,6 +12,8 @@
 <br/>
 
 ### Quick Links
+[VKAX Legacy Command Line Reference](https://github.com/realsetvin/vkax/blob/master/doc/vkax-command-line-rpc-api-reference.md)
+<br/>
 [VKAX CLI Arguments & Commands](https://github.com/realsetvin/vkax/blob/master/doc/vkax-cli-wallet-arguments-and-commands.md)
 <br/>
 [VKAX Remote Procedure Calls (RPC)](https://github.com/realsetvin/vkax/blob/master/doc/vkax-remote-procedure-calls)
