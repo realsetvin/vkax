@@ -71,9 +71,8 @@ make
 > The build will take a long time. Please do not close the system while the script is working
 
 When it is complete it should look like this
-```
 ![image](https://github.com/realsetvin/vkax/assets/117243445/447103d0-57ce-47f5-b072-3dae6524c4b6)
-```
+
 
 <br/>
 
