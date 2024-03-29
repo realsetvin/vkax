@@ -184,6 +184,9 @@ Run the **Help** command as the **vkax-test** user to get a full list of availab
 <br/> 
 
 # Getting your HD Seed Phrase 
+Getting a seed phrase is essential for anyone who wants security, confidence or is considering doing serious development work on the VKAX network. 
+All you have to do is write down your seed words and remember to use them.
+
 Display your seed phrase with the below command
 ```
 ~/.vkaxcore/vkax-cli -testnet dumphdinfo
