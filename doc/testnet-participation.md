@@ -177,12 +177,29 @@ To ensure you have a **connection** with the network you can write
 ```
 <br/> 
 
+Run the **Help** command as the **vkax-test** user to get a full list of available commands! )You must include **-testnet** when using the testnet)
+```
+~/.vkaxcore/vkax-cli -testnet help
+```
+<br/> 
+
+## Basic VKAX Commands
+
+<br/> 
+
+To check the status of the testnet daemon's **debug log**
+```
+watch tail ~/.vkaxcore/testnet3/debug.log -n25
+```
+
+<br/> 
+<br/> 
+
 To start **mining** for blocks
 ```
 ~/.vkaxcore/vkax-cli -testnet setgenerate true
 ```
 <br/> 
-
 
 Check **cpu usage** after mining using the **`htop`** command
 ```
@@ -190,13 +207,15 @@ htop
 ```
 
 <br/> 
+<br/> 
 
-To check the status of the testnet daemon's **debug log**
+After finding a block you will get sent coins. Use this command to see the last 10
 ```
-watch tail ~/.vkaxcore/testnet3/debug.log -n25
-``
+~/.vkaxcore/vkax-cli -testnet listtransactions
+```
 
 <br/> 
+
 To see the current **block** count
 
 ```
@@ -204,16 +223,17 @@ To see the current **block** count
 ```
 <br/> 
 
-To check your **coin** balance
+To check your **coin** balance (will only display mature blocks after 200 confirmations)
 ```
 ~/.vkaxcore/vkax-cli -testnet getbalance
 ```
 <br/> 
+<br/> 
 
-Run the **Help** command as the **vkax-test** user to get a full list of available commands! )You must include **-testnet** when using the testnet)
-```
-~/.vkaxcore/vkax-cli -testnet help
-```
+
+After accumulating **1 000 000** coins you will be eligable to create a **masternode**
+
+
 
 
 
