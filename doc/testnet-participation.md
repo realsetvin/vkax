@@ -230,8 +230,18 @@ To check your **coin** balance (will only display mature blocks after 200 confir
 <br/> 
 <br/> 
 
+### More VKAX Commands
+[Please refer to the complete documented list of VKAX CLI Commands!](https://github.com/realsetvin/vkax/blob/master/doc/vkax-cli-wallet-arguments-and-commands.md)
+
+<br/> 
+
+## Conclusion
+
+Congrats! You are now running a node on the **VKAX Test Net**
 
 After accumulating **1 000 000** coins you will be eligable to create a **masternode**
+
+Once you are become familiar with the **Test Net** envoirnment, you should be ready to confidently use the VKAX **Main Net**. Good luck!
 
 
 
