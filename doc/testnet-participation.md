@@ -199,17 +199,25 @@ To start **mining** for blocks
 ```
 ~/.vkaxcore/vkax-cli -testnet setgenerate true
 ```
+
+The only indication that mining has started is this output which shows us how many cores are running.
+![image](https://github.com/realsetvin/vkax/assets/117243445/f61bccb1-2097-4d99-a854-e8dc410cdfa9)
+
 <br/> 
 
-Check **cpu usage** after mining using the **`htop`** command
+You can also check **cpu usage** after mining using the **`htop`** command
 ```
 htop
 ```
 
+`htop` will look liks this. (press **CTRL + C** to exit)
+![image](https://github.com/realsetvin/vkax/assets/117243445/cfdb2012-d202-4207-a162-328836a58428)
+
+
 <br/> 
 <br/> 
 
-After finding a block you will get sent coins. Use this command to see the last 10
+After finding a block you will get sent coins. Use this command to see the last 10 transations
 ```
 ~/.vkaxcore/vkax-cli -testnet listtransactions
 ```
