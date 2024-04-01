@@ -7,7 +7,7 @@
 *"_With truth arises a hidden gift_"*
 <br/>
 
-A Crypto Currency **Hard Fork** is when the code of a coin is changed in a substantial way, requiring a majority network consensus to achieve. Much like a civil war, this process is contentious by its nature and requires many active network participants. By running a client from this branch and keeping it online, you are signaling to the network that you **Vote in Favor** of the changes proposed by this branch. A successful **Hard Fork** will be achieved if enough online clients agree.
+A Crypto Currency **Hard Fork** is when the code of a coin is changed in a substantial way, requiring a majority network consensus to achieve. Much like a civil war, this process can be contentious by its nature. Many active network participants must be pressed into service to signal their vote. By running a client from this branch and keeping it online, you are signaling to the network that you **Vote in Favor** of the changes proposed by this branch. A successful **Hard Fork** will be achieved if enough online clients agree.
 
 <br/>
 
